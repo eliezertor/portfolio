@@ -1,0 +1,54 @@
+{
+  "skills": [
+    {
+      "class": "skills__js",
+      "logo": "./Logo/JS.svg",
+      "name": "JavaScript logo"
+    },
+    {
+      "class": "skills__react",
+      "logo": "./Logo/React.svg",
+      "name": "React logo"
+    },
+    {
+      "class": "skills__node",
+      "logo": "./Logo/Node.svg",
+      "name": "Node logo"
+    },
+    {
+      "class": "skills__express",
+      "logo": "./Logo/express.svg",
+      "name": "Express logo"
+    },
+    {
+      "class": "skills__bem",
+      "logo": "./Logo/bem.svg",
+      "name": "Bem logo"
+    },
+    {
+      "class": "skills__scss",
+      "logo": "./Logo/Sass.svg",
+      "name": "Sass logo"
+    },
+    {
+      "class": "skills__gsap",
+      "logo": "./Logo/Gsap.svg",
+      "name": "Gsap logo"
+    },
+    {
+      "class": "skills__passport",
+      "logo": "./Logo/Passport.svg",
+      "name": "Passport logo"
+    },
+    {
+      "class": "skills__material",
+      "logo": "./Logo/Material.svg",
+      "name": "Material logo"
+    },
+    {
+      "class": "skills__git",
+      "logo": "./Logo/Git.svg",
+      "name": "Git logo"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+@import "../../styles/Partials/fonts";
+@import "../../styles/Partials/mixins";
+@import "../../styles/Partials/variables";
+
+.about {
+  background-color: black;
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  &__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image {
+    width: 55%;
+  }
+  &__container-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__paragraph {
+    color: white;
+    font-size: 0.8em;
+    width: 55%;
+  }
+}

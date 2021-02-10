@@ -1,0 +1,51 @@
+.skills {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 15%;
+  padding-bottom: 5%;
+}
+.skills__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+.skills__bem, .skills__material, .skills__passport, .skills__git, .skills__express, .skills__node, .skills__gsap, .skills__scss, .skills__react, .skills__js, .skills__css, .skills__html {
+  width: 15%;
+}
+.skills__css {
+  width: 10.7%;
+}
+.skills__js {
+  width: 12.2%;
+}
+.skills__react {
+  width: 20%;
+}
+.skills__express {
+  width: 30%;
+}
+.skills__git {
+  width: 30%;
+}
+.skills__passport {
+  width: 25%;
+}
+.skills__material {
+  width: 18%;
+}
+/*# sourceMappingURL=skills.css.map */

@@ -1,0 +1,63 @@
+@import "../../styles/Partials/fonts";
+@import "../../styles/Partials/mixins";
+@import "../../styles/Partials/variables";
+
+.skills {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15%;
+  padding-bottom: 5%;
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  &__bem {
+    width: 15%;
+  }
+  &__html {
+    @extend .skills__bem;
+  }
+  &__css {
+    @extend .skills__bem;
+    width: 10.7%;
+  }
+  &__js {
+    @extend .skills__bem;
+    width: 12.2%;
+  }
+  &__react {
+    @extend .skills__bem;
+    width: 20%;
+  }
+  &__scss {
+    @extend .skills__bem;
+  }
+  &__gsap {
+    @extend .skills__bem;
+  }
+  &__node {
+    @extend .skills__bem;
+  }
+  &__express {
+    @extend .skills__bem;
+    width: 30%;
+  }
+  &__git {
+    @extend .skills__bem;
+    width: 30%;
+  }
+  &__passport {
+    @extend .skills__bem;
+    width: 25%;
+  }
+  &__material {
+    @extend .skills__bem;
+    width: 18%;
+  }
+}
