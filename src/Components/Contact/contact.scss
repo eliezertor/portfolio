@@ -1,0 +1,31 @@
+@import "../../styles/Partials/fonts";
+@import "../../styles/Partials/mixins";
+@import "../../styles/Partials/variables";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__name-label {
+  }
+  &__name-input {
+    width: 75%;
+    border-radius: 3px;
+    border: none;
+    margin: 5% 0;
+    height: 30px;
+  }
+  &__email-label {
+  }
+  &__email-input {
+    @extend .contact__name-input;
+  }
+  &__message-label {
+  }
+  &__message-input {
+    @extend .contact__name-input;
+    height: 50px;
+  }
+  &__btn {
+  }
+}
