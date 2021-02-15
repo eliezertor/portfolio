@@ -11,8 +11,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 5%;
+  padding-top: 2%;
 }
-margin .navbar__logo-container {
+.navbar__logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,17 +66,42 @@ margin .navbar__logo-container {
           animation-fill-mode: backwards;
 }
 .navbar__mobile-hamburger {
-  border-top: 2px solid green;
+  border-top: 2px solid black;
   margin: 5px auto;
   width: 30px;
 }
 .navbar__menu {
-  width: 78%;
+  width: 100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  position: relative;
+  top: -38px;
+}
+.navbar__menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+}
+.navbar__menu-btn-icon {
+  width: 20%;
+  margin-left: 20px;
 }
 .navbar__menu--hide {
   display: none;
@@ -87,20 +114,33 @@ margin .navbar__logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.544);
+  border-radius: 5px 0 0 5px;
+  height: 100vh;
+  position: fixed;
 }
 .navbar__list-item {
   color: white;
   text-decoration: none;
   display: inline;
-  width: 33%;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 3% 0;
 }
 .navbar__list-link {
   text-decoration: none;
   color: white;
   margin: 0 2% 0 2%;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 @-webkit-keyframes linkmove {
