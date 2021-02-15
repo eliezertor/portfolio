@@ -7,18 +7,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.navbar__logo-container {
+margin .navbar__logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
+  margin: 2% 0 0 0;
+  width: 100%;
 }
 .navbar__logo-link {
   display: -webkit-box;
@@ -34,24 +36,152 @@
 .navbar__logo {
   width: 55%;
 }
+.navbar__mobile {
+  margin-right: 20px;
+}
+.navbar__mobile:hover div:nth-of-type(odd) {
+  -webkit-animation: linkmove 0.2s linear;
+          animation: linkmove 0.2s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.navbar__mobile:hover div:nth-of-type(even) {
+  -webkit-animation: linkmove-center 0.2s linear;
+          animation: linkmove-center 0.2s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.navbar__mobile div:nth-of-type(even) {
+  -webkit-animation: linkmove-center-back 0.2s linear;
+          animation: linkmove-center-back 0.2s linear;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+.navbar__mobile div:nth-of-type(odd) {
+  -webkit-animation: linkmove-back 0.2s linear;
+          animation: linkmove-back 0.2s linear;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+.navbar__mobile-hamburger {
+  border-top: 2px solid green;
+  margin: 5px auto;
+  width: 30px;
+}
 .navbar__menu {
+  width: 78%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar__menu--hide {
   display: none;
-  margin-right: 1%;
-  width: 25%;
 }
 .navbar__menu-list {
   list-style: none;
   padding: 0;
-  margin: auto;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .navbar__list-item {
   color: white;
   text-decoration: none;
   display: inline;
+  width: 33%;
 }
 .navbar__list-link {
   text-decoration: none;
   color: white;
   margin: 0 2% 0 2%;
+}
+
+@-webkit-keyframes linkmove {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(-5px);
+            transform: translate(-5px);
+  }
+}
+
+@keyframes linkmove {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(-5px);
+            transform: translate(-5px);
+  }
+}
+@-webkit-keyframes linkmove-back {
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  0% {
+    -webkit-transform: translate(-5px);
+            transform: translate(-5px);
+  }
+}
+@keyframes linkmove-back {
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  0% {
+    -webkit-transform: translate(-5px);
+            transform: translate(-5px);
+  }
+}
+@-webkit-keyframes linkmove-center {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(5px);
+            transform: translate(5px);
+  }
+}
+@keyframes linkmove-center {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(5px);
+            transform: translate(5px);
+  }
+}
+@-webkit-keyframes linkmove-center-back {
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  0% {
+    -webkit-transform: translate(5px);
+            transform: translate(5px);
+  }
+}
+@keyframes linkmove-center-back {
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  0% {
+    -webkit-transform: translate(5px);
+            transform: translate(5px);
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

@@ -8,12 +8,15 @@
   height: 7vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  margin-bottom: 5%;
 
   &__logo-container {
     display: flex;
     justify-content: space-between;
-    justify-content: center;
-    margin: auto;
+    margin: 2% 0 0 0;
+    width: 100%;
+    // margin-bottom: 0;
   }
   &__logo-link {
     display: flex;
@@ -23,25 +26,117 @@
   &__logo {
     width: 55%;
   }
-  &__menu {
-    display: none;
-    margin-right: 1%;
-    width: 25%;
+  &__mobile {
+    margin-right: 20px;
   }
+
+  &__mobile {
+    &:hover div {
+      &:nth-of-type(odd) {
+        animation: linkmove 0.2s linear;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  &__mobile {
+    &:hover div {
+      &:nth-of-type(even) {
+        animation: linkmove-center 0.2s linear;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  &__mobile {
+    div {
+      &:nth-of-type(even) {
+        animation: linkmove-center-back 0.2s linear;
+        animation-fill-mode: backwards;
+      }
+    }
+  }
+
+  &__mobile {
+    div {
+      &:nth-of-type(odd) {
+        animation: linkmove-back 0.2s linear;
+        animation-fill-mode: backwards;
+      }
+    }
+  }
+
+  &__mobile-hamburger {
+    border-top: 2px solid green;
+    margin: 5px auto;
+    width: 30px;
+  }
+
+  &__menu {
+    width: 78%;
+    align-self: flex-end;
+    display: flex;
+    // margin: 5%;
+  }
+
+  &__menu--hide {
+    display: none;
+  }
+
   &__menu-list {
     list-style: none;
-    // width: 30%;
     padding: 0;
-    margin: auto;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: 15%;
   }
   &__list-item {
     color: white;
     text-decoration: none;
     display: inline;
+    width: 33%;
   }
   &__list-link {
     text-decoration: none;
     color: white;
     margin: 0 2% 0 2%;
+  }
+}
+
+@keyframes linkmove {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-5px);
+  }
+}
+
+@keyframes linkmove-back {
+  100% {
+    transform: translate(0);
+  }
+  0% {
+    transform: translate(-5px);
+  }
+}
+
+@keyframes linkmove-center {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(5px);
+  }
+}
+
+@keyframes linkmove-center-back {
+  100% {
+    transform: translate(0);
+  }
+  0% {
+    transform: translate(5px);
   }
 }
