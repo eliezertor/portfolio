@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Et from "../../assets/Logo/ET-white.png";
 import "./Navbar.scss";
 import Close from "../../assets/icons/window-close.svg";
+import Data from "../../data/data.json";
+import { v4 as uuidv4 } from "uuid";
 
 const Navbar = () => {
   let [ham, setHam] = useState(false);
@@ -43,7 +45,7 @@ const Navbar = () => {
           </button>
           <li className="navbar__list-item">
             <a className="navbar__list-link" href="#/">
-              About Me
+              Home
             </a>
           </li>
           <li className="navbar__list-item">
@@ -56,6 +58,26 @@ const Navbar = () => {
               Contact Me
             </a>
           </li>
+          <div className="navbar__menu-social">
+            {Data.social.map((social) => {
+              console.log(social);
+              return (
+                <a
+                  key={uuidv4()}
+                  href={social.link}
+                  className="navbar__menu-social-links"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={social.logo}
+                    alt={social.name}
+                    className={social.class}
+                  />
+                </a>
+              );
+            })}
+          </div>
         </ul>
       </div>
     </nav>

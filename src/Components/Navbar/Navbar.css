@@ -66,7 +66,7 @@
           animation-fill-mode: backwards;
 }
 .navbar__mobile-hamburger {
-  border-top: 2px solid black;
+  border-top: 2px solid white;
   margin: 5px auto;
   width: 30px;
 }
@@ -122,7 +122,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.544);
+  background-color: rgba(0, 0, 0, 0.744);
   border-radius: 5px 0 0 5px;
   height: 100vh;
   position: fixed;
@@ -141,6 +141,35 @@
   margin: 0 2% 0 2%;
   font-weight: 700;
   font-size: 1.5rem;
+}
+.navbar__menu-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+.navbar__menu-social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navbar__menu-social-links-item {
+  width: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @-webkit-keyframes linkmove {

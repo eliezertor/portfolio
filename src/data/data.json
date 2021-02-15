@@ -50,5 +50,25 @@
       "logo": "./Logo/Git.svg",
       "name": "Git logo"
     }
+  ],
+  "social": [
+    {
+      "class": "navbar__menu-social-links-item",
+      "logo": "./icons/github-brands.svg",
+      "name": "github",
+      "link": "https://github.com/eliezertor"
+    },
+    {
+      "class": "navbar__menu-social-links-item",
+      "logo": "./icons/linkedin-in-brands.svg",
+      "name": "linkedin",
+      "link": "https://www.linkedin.com/in/eliezer-toribio/"
+    },
+    {
+      "class": "navbar__menu-social-links-item",
+      "logo": "./icons/twitter-brands.svg",
+      "name": "twitter",
+      "link": "https://twitter.com/ToribioEliezer"
+    }
   ]
 }
