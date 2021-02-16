@@ -70,7 +70,6 @@ const Navbar = () => {
           </li>
           <div className="navbar__menu-social">
             {Data.social.map((social) => {
-              console.log(social);
               return (
                 <a
                   key={uuidv4()}

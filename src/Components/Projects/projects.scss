@@ -5,4 +5,30 @@
 .projects {
   display: flex;
   height: 100vh;
+
+  &__container {
+    // background-color: black;
+    display: flex;
+  }
+  &__project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(24, 24, 24, 0.479);
+    width: 53%;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  &__project-title {
+    color: white;
+    margin: 10px 0;
+  }
+  &__project-image {
+    width: 85%;
+    margin-bottom: 10px;
+  }
+  &__project-description {
+    color: white;
+    display: none;
+  }
 }
