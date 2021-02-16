@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Et from "../../assets/Logo/ET-white.png";
+import TopLogo from "../../assets/Logo/EtLogo.png";
 import "./Navbar.scss";
 import Close from "../../assets/icons/window-close.svg";
 import Data from "../../data/data.json";
+import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
 const Navbar = () => {
   let [ham, setHam] = useState(false);
-
-  console.log(ham, "ham");
   let [navBarMenu, setNavBarMenu] = useState("navbar__menu--hide");
 
   let hamburger = () => {
@@ -22,11 +22,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav id="top" className="navbar">
       <div className="navbar__logo-container">
         <a className="navbar__logo-link" href="#/">
-          {/* <p className="navbar__logo">&lt;et&#62;</p> */}
-          <img className="navbar__logo" src={Et} alt="ET logo" />
+          <img className="navbar__logo" src={TopLogo} alt="ET logo" />
         </a>
         <div onClick={hamburger} className="navbar__mobile">
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-top "></div>
@@ -44,9 +43,9 @@ const Navbar = () => {
             />
           </button>
           <li className="navbar__list-item">
-            <a className="navbar__list-link" href="#/">
+            <Link className="navbar__list-link" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li className="navbar__list-item">
             <a className="navbar__list-link" href="#/">
@@ -54,9 +53,9 @@ const Navbar = () => {
             </a>
           </li>
           <li className="navbar__list-item">
-            <a className="navbar__list-link" href="#/">
+            <Link className="navbar__list-link" to="/Contact">
               Contact Me
-            </a>
+            </Link>
           </li>
           <div className="navbar__menu-social">
             {Data.social.map((social) => {

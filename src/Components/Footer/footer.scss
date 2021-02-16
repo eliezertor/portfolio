@@ -1,0 +1,33 @@
+@import "../../styles/Partials/fonts";
+@import "../../styles/Partials/mixins";
+@import "../../styles/Partials/variables";
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  &__logo-container {
+    display: flex;
+  }
+  &__logo {
+    width: 90%;
+    margin-left: 20px;
+  }
+  &__logo-btn {
+    border: none;
+    color: transparent;
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    width: 25%;
+    outline: none;
+  }
+  &__date {
+    color: white;
+    font-size: 0.6rem;
+    align-items: center;
+    // justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+  }
+}

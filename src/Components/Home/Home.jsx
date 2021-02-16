@@ -1,8 +1,8 @@
 import React from "react";
-import "./AboutMe.scss";
+import "./home.scss";
 import eliezer from "../../assets/images/eliezer.jpg";
 
-const AboutMe = () => {
+const Home = () => {
   return (
     <div className="about">
       <div className="about__image-container">
@@ -26,4 +26,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Home;
