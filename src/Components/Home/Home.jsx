@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.scss";
 import eliezer from "../../assets/images/eliezer.jpg";
+import Skills from "../Skills/Skills";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
           placeat doloremque explicabo?
         </p>
       </div>
+      <Skills />
     </div>
   );
 };

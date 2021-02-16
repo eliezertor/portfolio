@@ -24,9 +24,9 @@ const Navbar = () => {
   return (
     <nav id="top" className="navbar">
       <div className="navbar__logo-container">
-        <a className="navbar__logo-link" href="#/">
+        <Link className="navbar__logo-link" to="/">
           <img className="navbar__logo" src={TopLogo} alt="ET logo" />
-        </a>
+        </Link>
         <div onClick={hamburger} className="navbar__mobile">
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-top "></div>
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-center"></div>
@@ -43,17 +43,29 @@ const Navbar = () => {
             />
           </button>
           <li className="navbar__list-item">
-            <Link className="navbar__list-link" to="/">
+            <Link
+              onClick={() => hamburger()}
+              className="navbar__list-link"
+              to="/"
+            >
               Home
             </Link>
           </li>
           <li className="navbar__list-item">
-            <a className="navbar__list-link" href="#/">
+            <Link
+              onClick={() => hamburger()}
+              className="navbar__list-link"
+              to="/projects"
+            >
               My Work
-            </a>
+            </Link>
           </li>
           <li className="navbar__list-item">
-            <Link className="navbar__list-link" to="/Contact">
+            <Link
+              onClick={() => hamburger()}
+              className="navbar__list-link"
+              to="/Contact"
+            >
               Contact Me
             </Link>
           </li>
@@ -69,6 +81,7 @@ const Navbar = () => {
                   rel="noreferrer"
                 >
                   <img
+                    onClick={() => hamburger()}
                     src={social.logo}
                     alt={social.name}
                     className={social.class}

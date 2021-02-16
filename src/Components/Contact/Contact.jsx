@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Data from "../../data/data.json";
 import { v4 as uuidv4 } from "uuid";
+import Plane from "../../assets/icons/paper-plane-solid.svg";
+import Comment from "../../assets/icons/comment-dots-solid.svg";
 
 import "./contact.scss";
 
@@ -46,13 +48,13 @@ export default function ContactUs() {
         />
 
         <textarea
-          placeholder="Leave me a lovely message place"
+          placeholder="Arina loves me"
           className="contact__message-input"
           name="message"
           id="message"
         />
 
-        <input className="contact__btn" type="submit" value="Send" />
+        <input className="contact__btn" type="image" alt="Send" src={Plane} />
       </form>
       <div className="navbar__menu-social">
         {Data.social.map((social) => {

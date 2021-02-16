@@ -20,18 +20,65 @@
     border: none;
     margin: 5% 0;
     height: 50px;
+    background-image: url("../../assets//icons/smile-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: 15px;
+    background-position-y: 10px;
+
+    &:focus {
+      background-image: none;
+      &::placeholder {
+        color: transparent;
+      }
+    }
+    &::placeholder {
+      padding: 60px;
+    }
   }
   &__email-label {
   }
   &__email-input {
     @extend .contact__name-input;
+    background-image: url("../../assets//icons/envelope-regular.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: 15px;
+    background-position-y: 10px;
+
+    &:focus {
+      background-image: none;
+      &::placeholder {
+        color: transparent;
+      }
+    }
+    &::placeholder {
+      padding: 60px;
+    }
   }
   &__message-label {
   }
   &__message-input {
     @extend .contact__name-input;
     height: 150px;
+    background-image: url("../../assets//icons/comment-dots-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-x: 10px;
+    background-position-y: 5px;
+    &:focus {
+      background-image: none;
+      &::placeholder {
+        color: transparent;
+      }
+    }
+    &::placeholder {
+      padding: 60px;
+    }
   }
   &__btn {
+    width: 150px;
+    height: 35px;
+    outline: none;
   }
 }

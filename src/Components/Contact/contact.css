@@ -27,8 +27,129 @@
   border: none;
   margin: 5% 0;
   height: 50px;
+  background-image: url("../../assets//icons/smile-solid.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position-x: 15px;
+  background-position-y: 10px;
+}
+.contact__name-input:focus, .contact__message-input:focus, .contact__email-input:focus {
+  background-image: none;
+}
+.contact__name-input:focus::-webkit-input-placeholder, .contact__message-input:focus::-webkit-input-placeholder, .contact__email-input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.contact__name-input:focus::-moz-placeholder, .contact__message-input:focus::-moz-placeholder, .contact__email-input:focus::-moz-placeholder {
+  color: transparent;
+}
+.contact__name-input:focus:-ms-input-placeholder, .contact__message-input:focus:-ms-input-placeholder, .contact__email-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.contact__name-input:focus::-ms-input-placeholder, .contact__message-input:focus::-ms-input-placeholder, .contact__email-input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+.contact__name-input:focus::placeholder, .contact__message-input:focus::placeholder, .contact__email-input:focus::placeholder {
+  color: transparent;
+}
+.contact__name-input::-webkit-input-placeholder, .contact__message-input::-webkit-input-placeholder, .contact__email-input::-webkit-input-placeholder {
+  padding: 60px;
+}
+.contact__name-input::-moz-placeholder, .contact__message-input::-moz-placeholder, .contact__email-input::-moz-placeholder {
+  padding: 60px;
+}
+.contact__name-input:-ms-input-placeholder, .contact__message-input:-ms-input-placeholder, .contact__email-input:-ms-input-placeholder {
+  padding: 60px;
+}
+.contact__name-input::-ms-input-placeholder, .contact__message-input::-ms-input-placeholder, .contact__email-input::-ms-input-placeholder {
+  padding: 60px;
+}
+.contact__name-input::placeholder, .contact__message-input::placeholder, .contact__email-input::placeholder {
+  padding: 60px;
+}
+.contact__email-input {
+  background-image: url("../../assets//icons/envelope-regular.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position-x: 15px;
+  background-position-y: 5px;
+}
+.contact__email-input:focus {
+  background-image: none;
+}
+.contact__email-input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.contact__email-input:focus::-moz-placeholder {
+  color: transparent;
+}
+.contact__email-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.contact__email-input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+.contact__email-input:focus::placeholder {
+  color: transparent;
+}
+.contact__email-input::-webkit-input-placeholder {
+  padding: 60px;
+}
+.contact__email-input::-moz-placeholder {
+  padding: 60px;
+}
+.contact__email-input:-ms-input-placeholder {
+  padding: 60px;
+}
+.contact__email-input::-ms-input-placeholder {
+  padding: 60px;
+}
+.contact__email-input::placeholder {
+  padding: 60px;
 }
 .contact__message-input {
   height: 150px;
+  background-image: url("../../assets//icons/comment-dots-solid.svg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position-x: 10px;
+  background-position-y: 5px;
+}
+.contact__message-input:focus {
+  background-image: none;
+}
+.contact__message-input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.contact__message-input:focus::-moz-placeholder {
+  color: transparent;
+}
+.contact__message-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.contact__message-input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+.contact__message-input:focus::placeholder {
+  color: transparent;
+}
+.contact__message-input::-webkit-input-placeholder {
+  padding: 60px;
+}
+.contact__message-input::-moz-placeholder {
+  padding: 60px;
+}
+.contact__message-input:-ms-input-placeholder {
+  padding: 60px;
+}
+.contact__message-input::-ms-input-placeholder {
+  padding: 60px;
+}
+.contact__message-input::placeholder {
+  padding: 60px;
+}
+.contact__btn {
+  width: 150px;
+  height: 35px;
+  outline: none;
 }
 /*# sourceMappingURL=contact.css.map */

@@ -1,5 +1,8 @@
 import React from "react";
 import FooterLogo from "../../assets/Logo/ET-white.png";
+import Policy from "../Policy/Policy";
+import { Link } from "react-router-dom";
+
 import "./footer.scss";
 
 function Footer() {
@@ -20,6 +23,9 @@ function Footer() {
       <div className="footer__date">
         © {year} EliezerToribio.com, all rights reserved
       </div>
+      <Link className="footer__policy" to="/policy">
+        Policy and Terms
+      </Link>
     </div>
   );
 }

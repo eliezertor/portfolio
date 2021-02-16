@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home";
 import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Policy from "./Components/Policy/Policy";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          <Route path="/" component={Contact}></Route>
+          <Route path="/contact" component={Contact}></Route>
+          <Route exact path="/policy" component={Policy}></Route>
         </Switch>
         <Footer />
       </Router>

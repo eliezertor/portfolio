@@ -1,0 +1,38 @@
+.policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 15px;
+}
+.policy h2 {
+  color: white;
+}
+.policy h3 {
+  color: white;
+}
+.policy p {
+  color: white;
+}
+.policy li {
+  color: white;
+}
+.policy a {
+  color: white;
+}
+.policy h2 {
+  color: white;
+}
+.policy h2 {
+  color: white;
+}
+.policy h2 {
+  color: white;
+}
+.policy h2 {
+  color: white;
+}
+/*# sourceMappingURL=policy.css.map */
