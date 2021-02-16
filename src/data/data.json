@@ -70,5 +70,12 @@
       "name": "twitter",
       "link": "https://twitter.com/ToribioEliezer"
     }
+  ],
+  "projects": [
+    {
+      "image": "./assets/images/SafelyPaid.png",
+      "name": "SafelyPaid",
+      "description": "COVID has added multiple levels of complexity to selling used goods in online markets like Kijiji, Facebook and CraigsList. In this new world, where meeting strangers can put you in a compromising position, having the internet at your fingertips can keep both your health and your bank account safe. With SafelyPaid, you can pay for your new found gem from home, coordinate shipping, track your item, and know that your money won’t be sent to the seller until and unless your package arrives Safely in your hands. With SafelyPaid, you can coordinate with one of our vetted couriers to pick up and deliver your item if the item is within pick up distance, if not you can coordinate with one of the major couriers via our App."
+    }
   ]
 }

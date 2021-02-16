@@ -7,10 +7,29 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  &__why-me {
+    display: flex;
+    justify-content: center;
+    color: white;
+    display: flex;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+  }
+  &__why-title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    display: flex;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+  }
   &__form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    // margin-top: 5%;
   }
   &__name-label {
   }
@@ -78,7 +97,8 @@
   }
   &__btn {
     width: 150px;
-    height: 35px;
+    height: 30px;
     outline: none;
+    // margin-top: 10%;
   }
 }

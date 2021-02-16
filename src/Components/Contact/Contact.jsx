@@ -3,8 +3,6 @@ import emailjs from "emailjs-com";
 import Data from "../../data/data.json";
 import { v4 as uuidv4 } from "uuid";
 import Plane from "../../assets/icons/paper-plane-solid.svg";
-import Comment from "../../assets/icons/comment-dots-solid.svg";
-
 import "./contact.scss";
 
 export default function ContactUs() {
@@ -27,6 +25,12 @@ export default function ContactUs() {
 
   return (
     <div className="contact">
+      <div className="contact__why">
+        <h5 className="contact__why-title">Why contact me</h5>
+        <p className="contact__why-me">Lorem ipsum dolor sit amet </p>
+        <p className="contact__why-me">Lorem ipsum dolor sit amet </p>
+        <p className="contact__why-me">Lorem ipsum dolor sit amet </p>
+      </div>
       <form className="contact__form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
         <input type="hidden" value="Eliezer" name="to_name" />

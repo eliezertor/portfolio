@@ -9,6 +9,32 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.contact__why-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 1.2rem;
+}
+.contact__why-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 1.2rem;
+}
 .contact__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,7 +97,7 @@
   background-repeat: no-repeat;
   background-size: 30px;
   background-position-x: 15px;
-  background-position-y: 5px;
+  background-position-y: 10px;
 }
 .contact__email-input:focus {
   background-image: none;
@@ -149,7 +175,7 @@
 }
 .contact__btn {
   width: 150px;
-  height: 35px;
+  height: 30px;
   outline: none;
 }
 /*# sourceMappingURL=contact.css.map */

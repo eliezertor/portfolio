@@ -1,5 +1,5 @@
 import React from "react";
-import FooterLogo from "../../assets/Logo/ET-white.png";
+import UpArrow from "../../assets/icons/angle-up-solid.svg";
 import Policy from "../Policy/Policy";
 import { Link } from "react-router-dom";
 
@@ -15,11 +15,9 @@ function Footer() {
 
   return (
     <div className="footer">
-      <div className="footer__logo-container">
-        <button className="footer__logo-btn" onClick={() => top()}>
-          <img className="footer__logo" src={FooterLogo} alt="Footer Logo" />
-        </button>
-      </div>
+      <button className="footer__logo-btn" onClick={() => top()}>
+        <img className="footer__logo" src={UpArrow} alt="" />
+      </button>
       <div className="footer__date">
         © {year} EliezerToribio.com, all rights reserved
       </div>

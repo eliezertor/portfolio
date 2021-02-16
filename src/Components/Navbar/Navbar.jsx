@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Et from "../../assets/Logo/ET-white.png";
-import TopLogo from "../../assets/Logo/EtLogo.png";
+import Www from "../../assets/Logo/Eliezer-Logo.png";
 import "./Navbar.scss";
 import Close from "../../assets/icons/window-close.svg";
 import Data from "../../data/data.json";
@@ -25,7 +24,7 @@ const Navbar = () => {
     <nav id="top" className="navbar">
       <div className="navbar__logo-container">
         <Link className="navbar__logo-link" to="/">
-          <img className="navbar__logo" src={TopLogo} alt="ET logo" />
+          <img className="navbar__logo" src={Www} alt="ET logo" />
         </Link>
         <div onClick={hamburger} className="navbar__mobile">
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-top "></div>
@@ -55,7 +54,7 @@ const Navbar = () => {
             <Link
               onClick={() => hamburger()}
               className="navbar__list-link"
-              to="/projects"
+              to="/Projects"
             >
               My Work
             </Link>

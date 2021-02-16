@@ -10,15 +10,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.footer__logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.footer__logo {
-  width: 90%;
-  margin-left: 20px;
-}
 .footer__logo-btn {
   border: none;
   color: transparent;
@@ -26,11 +17,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 25%;
+  padding: 0;
+  width: 5%;
   outline: none;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .footer__date {
   color: white;
@@ -39,7 +30,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
 }
 .footer__policy {
   color: white;
@@ -47,6 +38,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
   text-align: center;
   margin: 10px 0;
 }
