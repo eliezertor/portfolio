@@ -22,6 +22,7 @@
   outline: none;
   -ms-flex-item-align: center;
       align-self: center;
+  margin-top: 5%;
 }
 .footer__date {
   color: white;

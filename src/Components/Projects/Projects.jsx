@@ -7,7 +7,7 @@ function Projects() {
     <div className="Projects">
       <div className="projects__container">
         {Data.projects.map((projects) => {
-          console.log(projects);
+          // console.log(projects);
           return (
             <div className="projects__project">
               <>
@@ -20,14 +20,31 @@ function Projects() {
                 <p className="projects__project-description">
                   {projects.description}
                 </p>
-                <div className="projects__link">
-                  {Data.social.map((icons) => {
-                    return (
-                      <a href={projects.link} target="_blank" rel="noreferrer">
-                        <img src={icons.logo} alt={projects.name} />
-                      </a>
-                    );
-                  })}
+                <div className="projects__link-list">
+                  <a
+                    className="projects__link"
+                    href={projects.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      className="projects__link-img"
+                      src={projects.logo}
+                      alt={projects.name}
+                    />
+                  </a>
+                  <a
+                    className="projects__link"
+                    href={projects.webSite}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      className="projects__link-img"
+                      src={projects.linkImg}
+                      alt={projects.name}
+                    />
+                  </a>
                 </div>
               </>
             </div>

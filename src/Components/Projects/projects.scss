@@ -4,20 +4,24 @@
 
 .projects {
   display: flex;
-  height: 100vh;
+  // height: 100vh !important;
 
   &__container {
-    // background-color: black;
+    height: 75vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   &__project {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(24, 24, 24, 0.479);
-    width: 53%;
+    width: 90%;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 2% 2%;
+    padding-bottom: 3%;
   }
   &__project-title {
     color: white;
@@ -30,5 +34,20 @@
   &__project-description {
     color: white;
     display: none;
+  }
+  &__link-list {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 3% auto;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+  }
+  &__link-img {
+    width: 20%;
   }
 }
