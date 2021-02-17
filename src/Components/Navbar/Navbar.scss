@@ -25,6 +25,11 @@
     width: 100%;
     @include tablet {
     }
+    @include desktop {
+      // align-items: center;
+      // justify-content: center;
+      // align-content: center;
+    }
   }
   &__logo-link {
     display: flex;
@@ -102,7 +107,7 @@
     display: flex;
     flex-direction: column;
     background-color: black;
-    position: relative;
+    position: absolute;
     top: -38px;
     visibility: visible;
     opacity: 1;
@@ -118,6 +123,8 @@
       width: unset;
       background-color: unset;
       flex-direction: unset;
+      align-self: center;
+      margin-right: 5%;
     }
   }
 
@@ -130,9 +137,6 @@
     border: none;
     outline: none;
     @include tablet {
-      // align-self: flex-end;
-      // align-content: flex-end;
-      // align-items: flex-end;
       justify-content: flex-end;
     }
     @include desktop {
@@ -146,20 +150,22 @@
   }
 
   &__menu--hide {
-    position: relative;
+    position: absolute;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s linear 0.3s, opacity 900ms;
     top: 50%;
-    left: 50%;
+    left: -0%;
     @include desktop {
       position: unset;
       transition: unset;
       opacity: unset;
       top: unset;
       left: unset;
-      // display: flex;
+      align-self: flex-end;
       visibility: unset;
+      align-self: center;
+      margin-right: 5%;
     }
   }
 
@@ -184,7 +190,7 @@
       width: unset;
       margin: unset;
       padding: unset;
-      display: unset;
+      // display: unset;
       justify-content: unset;
     }
   }

@@ -6,6 +6,7 @@ import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Policy from "./Components/Policy/Policy";
 import Footer from "./Components/Footer/Footer";
+import Error from "./Components/Error/Error";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Projects" component={Projects}></Route>
           <Route path="/Contact" component={Contact}></Route>
           <Route exact path="/Policy" component={Policy}></Route>
+          <Route component={Error}></Route>
         </Switch>
         <Footer />
       </Router>

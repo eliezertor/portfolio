@@ -20,6 +20,9 @@
     @include tablet {
       width: 3%;
     }
+    @include desktop {
+      justify-content: center;
+    }
   }
   &__logo {
     width: 20px;

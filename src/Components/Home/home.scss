@@ -22,6 +22,9 @@
   }
   &__image {
     width: 55%;
+    @include desktop {
+      width: 35%;
+    }
   }
   &__container-paragraph {
     display: flex;

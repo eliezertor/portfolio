@@ -29,6 +29,13 @@
     width: 3%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .footer__logo {
   width: 20px;
 }

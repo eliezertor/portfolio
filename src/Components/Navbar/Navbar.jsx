@@ -38,64 +38,65 @@ const Navbar = () => {
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-center"></div>
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-bottom "></div>
         </div>
-      </div>
-      <div id="navbar__menu" className={navBarMenu}>
-        <ul className="navbar__menu-list">
-          <button onClick={() => hamburger()} className="navbar__menu-btn">
-            <img
-              className="navbar__menu-btn-icon"
-              src={Close}
-              alt="Close icon"
-            />
-          </button>
-          <li className="navbar__list-item">
-            <Link
-              onClick={() => hamburger()}
-              className="navbar__list-link"
-              to="/"
-            >
-              Home
-            </Link>
-          </li>
-          <li className="navbar__list-item">
-            <Link
-              onClick={() => hamburger()}
-              className="navbar__list-link"
-              to="/Projects"
-            >
-              My Work
-            </Link>
-          </li>
-          <li className="navbar__list-item">
-            <Link
-              onClick={() => hamburger()}
-              className="navbar__list-link"
-              to="/Contact"
-            >
-              Contact Me
-            </Link>
-          </li>
-          <div className="navbar__menu-social">
-            {Data.social.map((social) => {
-              return (
-                <a
-                  key={uuidv4()}
-                  href={social.link}
-                  className="navbar__menu-social-links"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    onClick={() => hamburger()}
-                    src={social.logo}
-                    alt={social.name}
-                    className={social.class}
-                  />
-                </a>
-              );
-            })}
-          </div>
-        </ul>
+
+        <div id="navbar__menu" className={navBarMenu}>
+          <ul className="navbar__menu-list">
+            <button onClick={() => hamburger()} className="navbar__menu-btn">
+              <img
+                className="navbar__menu-btn-icon"
+                src={Close}
+                alt="Close icon"
+              />
+            </button>
+            <li className="navbar__list-item">
+              <Link
+                onClick={() => hamburger()}
+                className="navbar__list-link"
+                to="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="navbar__list-item">
+              <Link
+                onClick={() => hamburger()}
+                className="navbar__list-link"
+                to="/Projects"
+              >
+                My Work
+              </Link>
+            </li>
+            <li className="navbar__list-item">
+              <Link
+                onClick={() => hamburger()}
+                className="navbar__list-link"
+                to="/Contact"
+              >
+                Contact Me
+              </Link>
+            </li>
+            <div className="navbar__menu-social">
+              {Data.social.map((social) => {
+                return (
+                  <a
+                    key={uuidv4()}
+                    href={social.link}
+                    className="navbar__menu-social-links"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      onClick={() => hamburger()}
+                      src={social.logo}
+                      alt={social.name}
+                      className={social.class}
+                    />
+                  </a>
+                );
+              })}
+            </div>
+          </ul>
+        </div>
       </div>
     </nav>
   );
