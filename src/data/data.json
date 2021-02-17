@@ -82,7 +82,7 @@
       "webSite": "https://safelypaid.herokuapp.com/"
     },
     {
-      "image": "./assets/images/SafelyPaid.png",
+      "image": "./assets/images/fsp.png",
       "name": "For Sensative People",
       "description": "Lorem Ipsum",
       "link": "https://github.com/eliezertor/fsp",

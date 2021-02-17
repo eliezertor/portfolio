@@ -24,6 +24,11 @@
       align-self: center;
   margin-top: 5%;
 }
+@media screen and (min-width: 768px) {
+  .footer__logo-btn {
+    width: 3%;
+  }
+}
 .footer__date {
   color: white;
   font-size: 0.6rem;
@@ -32,6 +37,11 @@
           align-items: center;
   text-align: center;
   margin: 0 0 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__date {
+    font-size: 0.8rem;
+  }
 }
 .footer__policy {
   color: white;

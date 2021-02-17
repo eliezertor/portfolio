@@ -54,6 +54,9 @@
     &::placeholder {
       padding: 60px;
     }
+    @include tablet {
+      width: 40%;
+    }
   }
   &__email-label {
   }

@@ -92,6 +92,11 @@
 .contact__name-input::placeholder, .contact__message-input::placeholder, .contact__email-input::placeholder {
   padding: 60px;
 }
+@media screen and (min-width: 768px) {
+  .contact__name-input, .contact__message-input, .contact__email-input {
+    width: 40%;
+  }
+}
 .contact__email-input {
   background-image: url("../../assets//icons/envelope-regular.svg");
   background-repeat: no-repeat;

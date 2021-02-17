@@ -11,6 +11,9 @@
   justify-content: center;
   padding-top: 15%;
   padding-bottom: 5%;
+  @include tablet {
+    padding-top: 5%;
+  }
   &__container {
     display: flex;
     justify-content: space-around;
@@ -19,21 +22,30 @@
   }
   &__bem {
     width: 15%;
+    @include tablet {
+      width: 8%;
+    }
   }
   &__html {
     @extend .skills__bem;
   }
-  &__css {
-    @extend .skills__bem;
-    width: 10.7%;
-  }
+  // &__css {
+  //   @extend .skills__bem;
+  //   width: 10.7%;
+  // }
   &__js {
     @extend .skills__bem;
     width: 12.2%;
+    @include tablet {
+      width: 8%;
+    }
   }
   &__react {
     @extend .skills__bem;
     width: 20%;
+    @include tablet {
+      width: 12%;
+    }
   }
   &__scss {
     @extend .skills__bem;
@@ -47,18 +59,29 @@
   &__express {
     @extend .skills__bem;
     width: 30%;
+    @include tablet {
+      width: 18%;
+    }
   }
   &__git {
     @extend .skills__bem;
     width: 30%;
+    @include tablet {
+      width: 14%;
+    }
   }
   &__passport {
     @extend .skills__bem;
     width: 25%;
+    @include tablet {
+      width: 12%;
+    }
   }
   &__material {
     @extend .skills__bem;
     width: 18%;
+    @include tablet {
+      width: 8%;
+    }
   }
 }
-

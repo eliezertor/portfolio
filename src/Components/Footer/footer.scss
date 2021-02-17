@@ -17,6 +17,9 @@
     outline: none;
     align-self: center;
     margin-top: 5%;
+    @include tablet {
+      width: 3%;
+    }
   }
   &__logo {
   }
@@ -26,6 +29,9 @@
     align-items: center;
     text-align: center;
     margin: 0 0 10px 0;
+    @include tablet {
+      font-size: 0.8rem;
+    }
   }
   &__policy {
     color: white;
@@ -34,5 +40,8 @@
     text-decoration: none;
     text-align: center;
     margin: 10px 0;
+    @include tablet {
+      font-size: 0.7rem;
+    }
   }
 }
