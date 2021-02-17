@@ -22,6 +22,8 @@
   }
   &__bem {
     width: 15%;
+    height: 8%;
+    margin: 0.5%;
     @include tablet {
       width: 8%;
     }
@@ -36,6 +38,7 @@
   &__js {
     @extend .skills__bem;
     width: 12.2%;
+    height: 8%;
     @include tablet {
       width: 8%;
     }
@@ -43,6 +46,7 @@
   &__react {
     @extend .skills__bem;
     width: 20%;
+    height: 8%;
     @include tablet {
       width: 12%;
     }
@@ -59,27 +63,31 @@
   &__express {
     @extend .skills__bem;
     width: 30%;
+    height: 8%;
     @include tablet {
       width: 18%;
     }
   }
   &__git {
     @extend .skills__bem;
-    width: 30%;
+    width: 25%;
+    height: 8%;
     @include tablet {
       width: 14%;
     }
   }
   &__passport {
     @extend .skills__bem;
-    width: 25%;
+    width: 12%;
+    // height: 8%;
     @include tablet {
-      width: 12%;
+      width: 7.5%;
     }
   }
   &__material {
     @extend .skills__bem;
     width: 18%;
+    height: 8%;
     @include tablet {
       width: 8%;
     }

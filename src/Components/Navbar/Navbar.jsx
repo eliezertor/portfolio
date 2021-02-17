@@ -9,6 +9,13 @@ import { v4 as uuidv4 } from "uuid";
 const Navbar = () => {
   let [ham, setHam] = useState(false);
   let [navBarMenu, setNavBarMenu] = useState("navbar__menu--hide");
+  let screen = window.innerWidth;
+
+  let logoDiv = document.querySelector(".navbar__logo-container");
+  let desktopMenu = document.querySelector(".navbar__menu--hide");
+
+  console.log(logoDiv);
+  console.log(desktopMenu);
 
   let hamburger = () => {
     if (ham === false) {
@@ -32,7 +39,7 @@ const Navbar = () => {
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-bottom "></div>
         </div>
       </div>
-      <div id="nav__menu" className={navBarMenu}>
+      <div id="navbar__menu" className={navBarMenu}>
         <ul className="navbar__menu-list">
           <button onClick={() => hamburger()} className="navbar__menu-btn">
             <img

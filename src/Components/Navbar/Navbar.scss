@@ -14,6 +14,9 @@
     padding-top: 2%;
     align-items: center;
   }
+  @include desktop {
+    margin-bottom: 2%;
+  }
 
   &__logo-container {
     display: flex;
@@ -27,9 +30,16 @@
     display: flex;
     align-items: center;
     width: 45%;
+    @media (orientation: landscape) {
+      // height: 100vh;
+      width: 25%;
+    }
     @include tablet {
       width: 25%;
       margin-left: 20px;
+    }
+    @include desktop {
+      width: 10%;
     }
   }
   &__logo {
@@ -45,6 +55,8 @@
         animation: linkmove 0.2s linear;
         animation-fill-mode: forwards;
       }
+    }
+    @include desktop {
     }
   }
 
@@ -79,6 +91,9 @@
     border-top: 2px solid white;
     margin: 5px auto;
     width: 30px;
+    @include desktop {
+      display: none;
+    }
   }
 
   &__menu {
@@ -92,6 +107,18 @@
     visibility: visible;
     opacity: 1;
     transition: visibility 0s linear 0.3s, opacity 900ms;
+    @include desktop {
+      position: unset;
+      visibility: unset;
+      transition: unset;
+      opacity: unset;
+      visibility: unset;
+      top: unset;
+      display: unset;
+      width: unset;
+      background-color: unset;
+      flex-direction: unset;
+    }
   }
 
   &__menu-btn {
@@ -108,10 +135,13 @@
       // align-items: flex-end;
       justify-content: flex-end;
     }
+    @include desktop {
+      display: none;
+    }
   }
 
   &__menu-btn-icon {
-    width: 20%;
+    width: 30px;
     margin-left: 20px;
   }
 
@@ -122,6 +152,15 @@
     transition: visibility 0s linear 0.3s, opacity 900ms;
     top: 50%;
     left: 50%;
+    @include desktop {
+      position: unset;
+      transition: unset;
+      opacity: unset;
+      top: unset;
+      left: unset;
+      // display: flex;
+      visibility: unset;
+    }
   }
 
   &__menu-list {
@@ -136,6 +175,18 @@
     height: 100vh;
     position: fixed;
     top: -1px;
+    @include desktop {
+      position: unset;
+      top: unset;
+      height: unset;
+      background-color: unset;
+      flex-direction: row;
+      width: unset;
+      margin: unset;
+      padding: unset;
+      display: unset;
+      justify-content: unset;
+    }
   }
   &__list-item {
     color: white;
@@ -144,6 +195,11 @@
     text-align: center;
     font-size: 0.9rem;
     margin: 3% 0;
+    @include desktop {
+      margin: unset;
+      display: unset;
+      width: 30%;
+    }
   }
   &__list-link {
     text-decoration: none;
@@ -151,6 +207,10 @@
     margin: 0 2% 0 2%;
     font-weight: 700;
     font-size: 1.5rem;
+    @include desktop {
+      font-size: inherit;
+      // width: 45%;
+    }
   }
   &__menu-social {
     display: flex;
@@ -160,6 +220,9 @@
     @include tablet {
       width: 50%;
       margin: 20px auto;
+    }
+    @include desktop {
+      margin: unset;
     }
   }
   &__menu-social-links {

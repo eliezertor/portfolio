@@ -29,6 +29,9 @@
     width: 3%;
   }
 }
+.footer__logo {
+  width: 20px;
+}
 .footer__date {
   color: white;
   font-size: 0.6rem;
@@ -52,5 +55,10 @@
   text-decoration: none;
   text-align: center;
   margin: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__policy {
+    font-size: 0.7rem;
+  }
 }
 /*# sourceMappingURL=footer.css.map */
