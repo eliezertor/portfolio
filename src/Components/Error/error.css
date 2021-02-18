@@ -39,6 +39,8 @@
   border: none;
   border-radius: 2px;
   border: none;
+  height: 40px;
+  width: 170px;
 }
 .error__link {
   text-decoration: none;

@@ -286,6 +286,8 @@
 @media screen and (min-width: 1200px) {
   .navbar__menu-social {
     margin: unset;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 .navbar__menu-social-links {

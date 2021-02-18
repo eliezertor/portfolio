@@ -229,6 +229,7 @@
     }
     @include desktop {
       margin: unset;
+      align-self: center;
     }
   }
   &__menu-social-links {
