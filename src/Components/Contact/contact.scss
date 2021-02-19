@@ -7,31 +7,87 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  &__why-me {
-    display: flex;
+  @include tablet {
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
     justify-content: center;
-    color: white;
-    display: flex;
-    text-align: center;
-    margin-bottom: 5%;
-    font-size: 1.2rem;
+    height: 73.1vh;
+  }
+  @include desktop {
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 71.8vh;
+  }
+  &__why {
+    @include tablet {
+      width: 50%;
+    }
+    @include desktop {
+      width: 50%;
+      align-items: flex-start;
+      justify-self: flex-start;
+      margin-bottom: 150px;
+    }
   }
   &__why-title {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    color: rgb(230, 56, 56);
+    display: flex;
+    text-align: center;
+    margin: 5%;
+    font-size: 2em;
+    @include desktop {
+      justify-content: flex-start;
+      margin: 0 0 15px 100px;
+      font-weight: 200;
+    }
+  }
+  &__why-me {
+    display: flex;
+    justify-content: flex-start;
     color: white;
     display: flex;
     text-align: center;
-    margin-bottom: 5%;
+    margin: 5%;
     font-size: 1.2rem;
+    font-weight: 200;
+    @include desktop {
+      justify-content: flex-start;
+      margin: 0 0 0 100px;
+      font-weight: 200;
+    }
+  }
+
+  &__why-me-list {
+    padding: 0;
+    @include desktop {
+      margin: 20px 0 20px 100px;
+    }
+  }
+  &__why-me--bullet {
+    color: white;
+    width: 80%;
+    font-size: 1rem;
+    margin: 10px 0 0 50px;
+    font-weight: 200;
   }
   &__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     // margin-top: 5%;
+    @include tablet {
+      width: 50%;
+    }
     @include desktop {
-      margin-bottom: 35px;
+      // margin-bottom: 35px;
+      // justify-content: flex-start;
+      // align-items: flex-start;
+      width: 50%;
     }
   }
   &__name-label {
@@ -40,13 +96,14 @@
     width: 75%;
     border-radius: 3px;
     border: none;
-    margin: 5% 0;
+    margin: 2% 0;
     height: 50px;
     background-image: url("../../assets//icons/smile-solid.svg");
     background-repeat: no-repeat;
     background-size: 30px;
     background-position-x: 15px;
     background-position-y: 10px;
+    font-family: "Roboto", sans-serif;
 
     &:focus {
       background-image: none;
@@ -58,7 +115,11 @@
       padding: 60px;
     }
     @include tablet {
-      width: 40%;
+      width: 70%;
+      margin: 2% 0;
+    }
+    @include desktop {
+      margin: 1% 0;
     }
   }
   &__email-label {
@@ -90,7 +151,7 @@
     background-repeat: no-repeat;
     background-size: 40px;
     background-position-x: 10px;
-    background-position-y: 5px;
+    background-position-y: 50px;
     &:focus {
       background-image: none;
       &::placeholder {
@@ -105,6 +166,15 @@
     width: 150px;
     height: 30px;
     outline: none;
-    // margin-top: 10%;
+    margin-top: 10px;
+    &:hover {
+      fill: rgb(230, 56, 56);
+    }
+    @include tablet {
+      margin-top: 10px;
+    }
+    @include desktop {
+      margin-top: 10px;
+    }
   }
 }

@@ -12,18 +12,44 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  @include desktop {
+    // height: 100vh;
+  }
   &__image-container {
     display: flex;
     align-items: center;
     justify-content: center;
     @include tablet {
-      width: 50%;
+      width: 40%;
+    }
+    @include desktop {
+      // align-items: flex-end;
+      align-content: flex-end;
+      justify-content: center;
+      // width: 40%;
+    }
+  }
+  &__image-container-reverse {
+    order: -1;
+    @include tablet {
+      order: unset;
+      align-items: flex-start;
+      margin-top: 150px;
+    }
+    @include desktop {
+      order: unset;
+      align-items: center;
+      margin: unset;
     }
   }
   &__image {
     width: 55%;
+    @include tablet {
+      width: 80%;
+    }
     @include desktop {
-      width: 35%;
+      width: 55%;
+      margin-right: 5%;
     }
   }
   &__container-paragraph {
@@ -31,17 +57,39 @@
     flex-direction: column;
     align-items: center;
     @include tablet {
-      width: 50%;
+      width: 60%;
       justify-content: center;
+      align-items: center;
+    }
+    @include desktop {
+      align-items: center;
     }
   }
   &__paragraph {
     color: white;
     font-size: 0.9em;
-    font-weight: 500;
-    width: 75%;
+    font-weight: 300;
+    width: 70%;
+    letter-spacing: 0.8px;
+    line-height: 22px;
     @include tablet {
       font-size: 1em;
     }
+    @include desktop {
+      margin: 0;
+    }
+  }
+  &__highlighter {
+    background-color: rgba(9, 226, 20, 0.322);
+  }
+  &__break {
+    margin: 15px 0;
+  }
+  &__paragraph-link {
+    // text-decoration: none;
+    color: white;
+  }
+  &__paragraph-cta {
+    color: #289eff;
   }
 }

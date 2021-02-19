@@ -9,13 +9,6 @@ import { v4 as uuidv4 } from "uuid";
 const Navbar = () => {
   let [ham, setHam] = useState(false);
   let [navBarMenu, setNavBarMenu] = useState("navbar__menu--hide");
-  let screen = window.innerWidth;
-
-  let logoDiv = document.querySelector(".navbar__logo-container");
-  let desktopMenu = document.querySelector(".navbar__menu--hide");
-
-  console.log(logoDiv);
-  console.log(desktopMenu);
 
   let hamburger = () => {
     if (ham === false) {

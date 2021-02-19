@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
 import Data from "../../data/data.json";
 import { v4 as uuidv4 } from "uuid";
 import Plane from "../../assets/icons/paper-plane-solid.svg";
@@ -9,6 +10,11 @@ export default function ContactUs() {
   let serviceId = "service_wk5nili";
   let templateId = "template_ume76um";
   let userId = "user_fgqf1auVWi89eBgAagyXe";
+  let key = "6LcNHl8aAAAAAHGZukEemWMX0xlcmM1R9guxd3T1";
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
 
   function sendEmail(e) {
     e.preventDefault();
@@ -26,10 +32,21 @@ export default function ContactUs() {
   return (
     <div className="contact">
       <div className="contact__why">
-        <h5 className="contact__why-title">Why contact me</h5>
-        <p className="contact__why-me">Lorem ipsum dolor sit amet </p>
-        <p className="contact__why-me">Lorem ipsum dolor sit amet </p>
-        <p className="contact__why-me">Lorem ipsum dolor sit amet </p>
+        <h5 className="contact__why-title">Say “Hola”</h5>
+        <p className="contact__why-me">Especially if...</p>
+        <ul className="contact__why-me-list">
+          <li className="contact__why-me--bullet">
+            You need a big-picture-thinking, problem-solving full-stack
+            engineer.
+          </li>
+          <li className="contact__why-me--bullet">
+            You’d like to nerd out about podcasts or web development.
+          </li>
+          <li className="contact__why-me--bullet">
+            You like building cars (I'm working on an RX7 FD).
+          </li>
+        </ul>
+        <p className="contact__why-me">I can’t wait to chat. </p>
       </div>
       <form className="contact__form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
@@ -52,17 +69,18 @@ export default function ContactUs() {
         />
 
         <textarea
-          placeholder="Arina loves me"
+          placeholder="Send me some love"
           className="contact__message-input"
           name="message"
           id="message"
         />
+        {/* <div className="g-recaptcha" data-sitekey={key}></div> */}
 
+        <ReCAPTCHA sitekey={key} onChange={onChange} theme="dark" />
         <input className="contact__btn" type="image" alt="Send" src={Plane} />
       </form>
       <div className="navbar__menu-social">
         {Data.social.map((social) => {
-          console.log(social);
           return (
             <a
               key={uuidv4()}

@@ -11,7 +11,7 @@
   }
 
   &__container {
-    height: 75vh;
+    // height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +37,7 @@
     border-radius: 5px;
     margin: 2% 2%;
     padding-bottom: 3%;
-    height: 43%;
+    // height: 600px;
 
     @media (orientation: landscape) {
       width: 40%;
@@ -47,6 +47,19 @@
       width: 50%;
     }
   }
+
+  // &__project:nth-child(1)::after {
+  //   display: flex;
+  //   align-content: center;
+  //   font-weight: 300;
+  //   width: 80%;
+  //   margin: 0 auto;
+  //   font-size: 0.8rem;
+  //   content: "Built a mobile-friendly frontend with HTML5, CSS3, BEM, Sass, JavaScript, React, and Material-UI that contained multiple components and pages.";
+  //   color: white;
+  //   animation: textTransform infinite ease-in-out 15s;
+  // }
+
   &__project-title {
     color: white;
     margin: 10px 0;
@@ -55,31 +68,62 @@
       font-size: 1.2em;
     }
   }
-  &__project-image {
-    width: 85%;
-    margin-bottom: 10px;
-  }
-  &__project-description {
-    color: white;
-    display: none;
-  }
-  &__link-list {
-    width: 60%;
+  &__project-link-img {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 3% auto;
+  }
+
+  &__project-description {
+    color: white;
+    width: 80%;
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+  &__project-img-container {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__project-image {
+    width: 90%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+  &__link-list {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 5% 0;
+    // height: 100%;
   }
   &__link {
     display: flex;
     justify-content: center;
+    margin: 10px 0;
   }
   &__link-img {
-    width: 25%;
+    width: 45%;
     height: 20%;
     @include tablet {
       width: 25%;
     }
+  }
+
+  &__project-text-transform {
+  }
+  &__project-text-list {
+    margin: 0;
+  }
+  &__project-text {
+    margin: 10px auto;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
   }
 }

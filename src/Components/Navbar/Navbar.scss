@@ -26,9 +26,9 @@
     @include tablet {
     }
     @include desktop {
-      // align-items: center;
+      align-items: center;
       // justify-content: center;
-      // align-content: center;
+      align-content: center;
     }
   }
   &__logo-link {
@@ -124,7 +124,9 @@
       background-color: unset;
       flex-direction: unset;
       align-self: center;
-      margin-right: 5%;
+      // margin-right: 5%;
+      width: 30%;
+      margin-right: 2%;
     }
   }
 
@@ -165,7 +167,8 @@
       align-self: flex-end;
       visibility: unset;
       align-self: center;
-      margin-right: 5%;
+      width: 30%;
+      margin-right: 2%;
     }
   }
 
@@ -190,8 +193,9 @@
       width: unset;
       margin: unset;
       padding: unset;
-      // display: unset;
-      justify-content: unset;
+      // width: 80%;
+      align-items: center;
+      justify-content: space-between;
     }
   }
   &__list-item {
@@ -201,10 +205,14 @@
     text-align: center;
     font-size: 0.9rem;
     margin: 3% 0;
+
     @include desktop {
       margin: unset;
       display: unset;
-      width: 30%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
   }
   &__list-link {
@@ -213,9 +221,38 @@
     margin: 0 2% 0 2%;
     font-weight: 700;
     font-size: 1.5rem;
+
     @include desktop {
       font-size: inherit;
-      // width: 45%;
+      &:hover,
+      :active {
+        letter-spacing: 3px;
+        transition: 0.7s;
+      }
+      &:after,
+      :before {
+        backface-visibility: hidden;
+        border: 1px solid rgba(#fff, 0);
+        bottom: 0px;
+        content: " ";
+        display: block;
+        margin: 0px auto;
+        position: relative;
+        transition: all 280ms ease-in-out;
+        width: 0;
+      }
+      &:hover:after,
+      :hover:before {
+        backface-visibility: hidden;
+        border-color: #fff;
+        transition: width 350ms ease-in-out;
+        width: 90%;
+      }
+      // &:hover:before {
+      //   bottom: auto;
+      //   top: 0;
+      //   width: 70%;
+      // }
     }
   }
   &__menu-social {
@@ -223,24 +260,35 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    width: 200px;
+    align-self: center;
     @include tablet {
-      width: 50%;
+      width: 300px;
       margin: 20px auto;
     }
     @include desktop {
       margin: unset;
       align-self: center;
+      width: 250px;
     }
   }
   &__menu-social-links {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include tablet {
+      width: 100px;
+    }
+    @include desktop {
+      width: 100%;
+    }
   }
   &__menu-social-links-item {
-    width: 30%;
-
+    width: 70%;
     align-items: center;
+  }
+  @include desktop {
+    width: 100%;
   }
 }
 

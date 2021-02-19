@@ -32,15 +32,57 @@
 }
 @media screen and (min-width: 768px) {
   .about__image-container {
-    width: 50%;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__image-container {
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.about__image-container-reverse {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+@media screen and (min-width: 768px) {
+  .about__image-container-reverse {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__image-container-reverse {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: unset;
   }
 }
 .about__image {
   width: 55%;
 }
+@media screen and (min-width: 768px) {
+  .about__image {
+    width: 80%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .about__image {
-    width: 35%;
+    width: 55%;
+    margin-right: 5%;
   }
 }
 .about__container-paragraph {
@@ -57,21 +99,50 @@
 }
 @media screen and (min-width: 768px) {
   .about__container-paragraph {
-    width: 50%;
+    width: 60%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__container-paragraph {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .about__paragraph {
   color: white;
   font-size: 0.9em;
-  font-weight: 500;
-  width: 75%;
+  font-weight: 300;
+  width: 70%;
+  letter-spacing: 0.8px;
+  line-height: 22px;
 }
 @media screen and (min-width: 768px) {
   .about__paragraph {
     font-size: 1em;
   }
+}
+@media screen and (min-width: 1200px) {
+  .about__paragraph {
+    margin: 0;
+  }
+}
+.about__highlighter {
+  background-color: rgba(9, 226, 20, 0.322);
+}
+.about__break {
+  margin: 15px 0;
+}
+.about__paragraph-link {
+  color: white;
+}
+.about__paragraph-cta {
+  color: #289eff;
 }
 /*# sourceMappingURL=home.css.map */

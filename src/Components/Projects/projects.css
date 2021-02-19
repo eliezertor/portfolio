@@ -9,7 +9,6 @@
   }
 }
 .projects__container {
-  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +54,6 @@
   border-radius: 5px;
   margin: 2% 2%;
   padding-bottom: 3%;
-  height: 43%;
 }
 @media (orientation: landscape) {
   .projects__project {
@@ -77,30 +75,56 @@
     font-size: 1.2em;
   }
 }
-.projects__project-image {
-  width: 85%;
-  margin-bottom: 10px;
-}
-.projects__project-description {
-  color: white;
-  display: none;
-}
-.projects__link-list {
-  width: 60%;
+.projects__project-link-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 3% auto;
+}
+.projects__project-description {
+  color: white;
+  width: 80%;
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+.projects__project-img-container {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects__project-image {
+  width: 90%;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.projects__link-list {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 5% 0;
 }
 .projects__link {
   display: -webkit-box;
@@ -109,14 +133,24 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 10px 0;
 }
 .projects__link-img {
-  width: 25%;
+  width: 45%;
   height: 20%;
 }
 @media screen and (min-width: 768px) {
   .projects__link-img {
     width: 25%;
   }
+}
+.projects__project-text-list {
+  margin: 0;
+}
+.projects__project-text {
+  margin: 10px auto;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 /*# sourceMappingURL=projects.css.map */

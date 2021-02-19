@@ -23,10 +23,19 @@
     flex-wrap: wrap;
     width: 80%;
   }
+
   &__bem {
     width: 15%;
     height: 8%;
     margin: 0.5%;
+    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%); /* FF 35+ */
+
+    &:hover {
+      transition: filter 0.5s ease-in-out;
+      -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+      filter: grayscale(0%); /* FF 35+ */
+    }
     @include tablet {
       width: 8%;
     }
@@ -34,13 +43,7 @@
       width: 5%;
     }
   }
-  // &__html {
-  //   @extend .skills__bem;
-  // }
-  // &__css {
-  //   @extend .skills__bem;
-  //   width: 10.7%;
-  // }
+
   &__js {
     @extend .skills__bem;
     width: 12.2%;

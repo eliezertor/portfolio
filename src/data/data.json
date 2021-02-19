@@ -75,7 +75,18 @@
     {
       "image": "./assets/images/SafelyPaid.png",
       "name": "SafelyPaid",
-      "description": "COVID has added multiple levels of complexity to selling used goods in online markets like Kijiji, Facebook and CraigsList. In this new world, where meeting strangers can put you in a compromising position, having the internet at your fingertips can keep both your health and your bank account safe. With SafelyPaid, you can pay for your new found gem from home, coordinate shipping, track your item, and know that your money won’t be sent to the seller until and unless your package arrives Safely in your hands. With SafelyPaid, you can coordinate with one of our vetted couriers to pick up and deliver your item if the item is within pick up distance, if not you can coordinate with one of the major couriers via our App.",
+      "description": "SafelyPaid is a safe platform and web app that helps users secure their online transactions on C2C marketplaces like Kijiji and Craigslist.",
+      "descriptionList": [
+        {
+          "item": "Built a mobile-friendly frontend with HTML5, CSS3, BEM, Sass, JavaScript, React, and Material-UI that contained multiple components and pages."
+        },
+        {
+          "item": "Implemented a backend with Node.js, Espress.js, axios and Passport that handled requests from the frontend for authorization and for features."
+        },
+        {
+          "item": "Incorporated multiple third-party APIs like Shippo and Stripe by following their developer guidelines and using their sandbox environments."
+        }
+      ],
       "link": "https://github.com/eliezertor/safelypaid",
       "logo": "./icons/github-brands.svg",
       "linkImg": "./assets/icons/link-solid.svg",
@@ -84,7 +95,19 @@
     {
       "image": "./assets/images/fsp.png",
       "name": "For Sensitive People",
-      "description": "Lorem Ipsum",
+      "description": "My wife is A Sensitive Person who gets deeply impacted by intense scenes in movies and shows and then can’t forget about them for months (or years). For Sensitive People is my way of helping her, and other folks like her, determine whether movies, tv shows, and documentaries are safe to watch for certain triggers, including scenes of abuse, abandonment, animal cruelty, and other trauma.",
+
+      "descriptionList": [
+        {
+          "item": "IMDB/OMDB API implementation"
+        },
+        {
+          "item": "Search and rating functionality"
+        },
+        {
+          "item": "Database for new reviews/review system "
+        }
+      ],
       "link": "https://github.com/eliezertor/fsp",
       "logo": "./icons/github-brands.svg",
       "linkImg": "./assets/icons/link-solid.svg",
