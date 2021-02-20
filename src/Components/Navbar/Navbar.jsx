@@ -20,6 +20,20 @@ const Navbar = () => {
     }
   };
 
+  let location = window.location.pathname;
+
+  let home;
+  let projects;
+  let contact;
+
+  if (location === "/") {
+    home = "navbar__list-link--active";
+  } else if (location === "/Projects") {
+    projects = "navbar__list-link--active";
+  } else if (location === "/Contact") {
+    contact = "navbar__list-link--active";
+  }
+
   return (
     <nav id="top" className="navbar">
       <div className="navbar__logo-container">
@@ -44,7 +58,7 @@ const Navbar = () => {
             <li className="navbar__list-item">
               <Link
                 onClick={() => hamburger()}
-                className="navbar__list-link"
+                className={`navbar__list-link ${home}`}
                 to="/"
               >
                 Home
@@ -53,7 +67,7 @@ const Navbar = () => {
             <li className="navbar__list-item">
               <Link
                 onClick={() => hamburger()}
-                className="navbar__list-link"
+                className={`navbar__list-link ${projects}`}
                 to="/Projects"
               >
                 My Work
@@ -62,7 +76,7 @@ const Navbar = () => {
             <li className="navbar__list-item">
               <Link
                 onClick={() => hamburger()}
-                className="navbar__list-link"
+                className={`navbar__list-link ${contact}`}
                 to="/Contact"
               >
                 Contact Me
@@ -74,7 +88,7 @@ const Navbar = () => {
                   <a
                     key={uuidv4()}
                     href={social.link}
-                    className="navbar__menu-social-links"
+                    className="navbar__menu-social-links "
                     target="_blank"
                     rel="noreferrer"
                   >

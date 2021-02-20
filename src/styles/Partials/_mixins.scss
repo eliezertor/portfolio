@@ -13,3 +13,8 @@
     @content;
   }
 }
+@mixin desktopPlus {
+  @media screen and (min-width: $desktopPlus-breakpoint) {
+    @content;
+  }
+}

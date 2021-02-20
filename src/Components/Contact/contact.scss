@@ -35,7 +35,7 @@
   &__why-title {
     display: flex;
     justify-content: flex-start;
-    color: rgb(230, 56, 56);
+    color: white;
     display: flex;
     text-align: center;
     margin: 5%;
@@ -175,6 +175,19 @@
     }
     @include desktop {
       margin-top: 10px;
+    }
+  }
+  &__social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__social-link-container {
+    width: 63px;
+  }
+  &__social--size {
+    @include desktop {
+      width: 75%;
     }
   }
 }

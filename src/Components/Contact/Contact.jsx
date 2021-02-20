@@ -11,6 +11,13 @@ export default function ContactUs() {
   let templateId = "template_ume76um";
   let userId = "user_fgqf1auVWi89eBgAagyXe";
   let key = "6LcNHl8aAAAAAHGZukEemWMX0xlcmM1R9guxd3T1";
+  let [name, setName] = useState("");
+  let [email, setEmail] = useState("");
+  let [message, setMessage] = useState("");
+
+  // console.log(name);
+  // console.log(email);
+  // console.log(message);
 
   function onChange(value) {
     console.log("Captcha value:", value);
@@ -19,14 +26,20 @@ export default function ContactUs() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm(serviceId, templateId, e.target, userId).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    if (name === "" || email === "" || message === "") {
+      console.log("you need a name or email or message");
+    } else {
+      console.log("we sent the email");
+    }
+
+    // emailjs.sendForm(serviceId, templateId, e.target, userId).then(
+    //   (result) => {
+    //     console.log(result.text);
+    //   },
+    //   (error) => {
+    //     console.log(error.text);
+    //   }
+    // );
   }
 
   return (
@@ -54,45 +67,46 @@ export default function ContactUs() {
 
         <input
           placeholder="Name"
-          className="contact__name-input"
+          className="contact__name-input contact__name-input--red"
           type="text"
           name="from_name"
           id="from_name"
+          onChange={(e) => setName(e.target.value)}
         />
 
         <input
           placeholder="Email"
-          className="contact__email-input"
+          className="contact__email-input contact__email-input--red"
           type="email"
           name="from_email"
           id="from_email"
+          onChange={(e) => setEmail(e.target.value)}
         />
 
         <textarea
           placeholder="Send me some love"
-          className="contact__message-input"
+          className="contact__message-input contact__message-input--red"
           name="message"
           id="message"
+          onChange={(e) => setMessage(e.target.value)}
         />
-        {/* <div className="g-recaptcha" data-sitekey={key}></div> */}
-
         <ReCAPTCHA sitekey={key} onChange={onChange} theme="dark" />
         <input className="contact__btn" type="image" alt="Send" src={Plane} />
       </form>
-      <div className="navbar__menu-social">
+      <div className="navbar__menu-social contact__social-container ">
         {Data.social.map((social) => {
           return (
             <a
               key={uuidv4()}
               href={social.link}
-              className="navbar__menu-social-links"
+              className="navbar__menu-social-links contact__social-link-container"
               target="_blank"
               rel="noreferrer"
             >
               <img
-                src={social.logo}
+                src={`${social.logo}`}
                 alt={social.name}
-                className={social.class}
+                className={`${social.class} contact__social--size `}
               />
             </a>
           );

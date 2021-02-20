@@ -9,11 +9,10 @@ function Projects() {
     <div className="Projects">
       <div className="projects__container">
         {Data.projects.map((projects) => {
-          // console.log(projects);
           return (
             <div key={uuidv4()} className="projects__project">
               <>
-                <h5 className="projects__project-title">{projects.name}</h5>
+                <p className="projects__project-title">{projects.name}</p>
                 <div className="projects__project-link-img">
                   <div className="projects__project-img-container">
                     <img
@@ -54,9 +53,11 @@ function Projects() {
                 </p>
                 <div className="projects__project-text">
                   <ul className="projects__project-text-list">
-                    {projects.descriptionList.map((list) => {
+                    {projects.descriptionList?.map((list) => {
                       return (
-                        <li className="projects__project-text">{list.item}</li>
+                        <li key={uuidv4()} className="projects__project-text">
+                          {list.item}
+                        </li>
                       );
                     })}
                   </ul>

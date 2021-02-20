@@ -21,6 +21,7 @@
     justify-content: center;
     @include tablet {
       width: 40%;
+      justify-content: flex-start;
     }
     @include desktop {
       // align-items: flex-end;
@@ -43,12 +44,13 @@
     }
   }
   &__image {
-    width: 55%;
+    max-width: 55%;
     @include tablet {
-      width: 80%;
+      width: 90%;
+      // align-self: flex-start;
     }
     @include desktop {
-      width: 55%;
+      max-width: 60%;
       margin-right: 5%;
     }
   }

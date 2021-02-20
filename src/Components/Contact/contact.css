@@ -65,7 +65,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  color: #e63838;
+  color: white;
   display: flex;
   text-align: center;
   margin: 5%;
@@ -295,6 +295,25 @@
 @media screen and (min-width: 1200px) {
   .contact__btn {
     margin-top: 10px;
+  }
+}
+.contact__social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact__social-link-container {
+  width: 63px;
+}
+@media screen and (min-width: 1200px) {
+  .contact__social--size {
+    width: 75%;
   }
 }
 /*# sourceMappingURL=contact.css.map */

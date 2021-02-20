@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./home.scss";
 import eliezer from "../../assets/images/eliezer.jpg";
 import Skills from "../Skills/Skills";
@@ -33,7 +32,7 @@ const Home = () => {
             &nbsp;and overall friendly human to their team.
           </p>
         </div>
-        <p className="about__paragraph">
+        <div className="about__paragraph">
           <p className="about__break">Things that matter:</p>
           <ul>
             <li className="about__break">
@@ -64,7 +63,7 @@ const Home = () => {
             commit.
           </p>
           <p className="about__break">&#60;&#47;et&#62;</p>
-        </p>
+        </div>
       </div>
       <div className="about__image-container about__image-container-reverse">
         <img className="about__image" src={eliezer} alt="" />

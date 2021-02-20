@@ -1,6 +1,5 @@
 import React from "react";
 import UpArrow from "../../assets/icons/angle-up-solid.svg";
-import Policy from "../Policy/Policy";
 import { Link } from "react-router-dom";
 
 import "./footer.scss";
