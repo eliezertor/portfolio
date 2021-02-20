@@ -14,10 +14,8 @@ export default function ContactUs() {
   let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [message, setMessage] = useState("");
-
-  // console.log(name);
-  // console.log(email);
-  // console.log(message);
+  let [successOrNot, setSuccessOrNot] = useState("");
+  let [errorOrNot, setErrorOrNot] = useState("");
 
   function onChange(value) {
     console.log("Captcha value:", value);
@@ -26,20 +24,39 @@ export default function ContactUs() {
   function sendEmail(e) {
     e.preventDefault();
 
-    if (name === "" || email === "" || message === "") {
-      console.log("you need a name or email or message");
+    if (name === "") {
+      setErrorOrNot("Dont' forget you name, I need to know who you are.");
+      setSuccessOrNot("contact__form-message--error");
+    } else if (email === "") {
+      setErrorOrNot("No call display here, Where do I email you? ");
+      setSuccessOrNot("contact__form-message--error");
+    } else if (message === "") {
+      setErrorOrNot("What are we chatting about?");
+      setSuccessOrNot("contact__form-message--error");
     } else {
-      console.log("we sent the email");
+      // if (successOrNot === "contact__form-message--success") {
+      //   setErrorOrNot("Cant wait to chat");
+      // }
+      emailjs
+        .sendForm(serviceId, templateId, e.target, userId)
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+            if (error.text) {
+              setErrorOrNot(error.text);
+              setSuccessOrNot("contact__form-message--error");
+            }
+          }
+        )
+        .then(
+          setSuccessOrNot("contact__form-message--success"),
+          setErrorOrNot("Can't wait to chat")
+        );
+      console.log(errorOrNot);
     }
-
-    // emailjs.sendForm(serviceId, templateId, e.target, userId).then(
-    //   (result) => {
-    //     console.log(result.text);
-    //   },
-    //   (error) => {
-    //     console.log(error.text);
-    //   }
-    // );
   }
 
   return (
@@ -62,6 +79,10 @@ export default function ContactUs() {
         <p className="contact__why-me">I can’t wait to chat. </p>
       </div>
       <form className="contact__form" onSubmit={sendEmail}>
+        {/* TODO: error or succsess message */}
+        <div className="contact__form-message-container">
+          <p className={successOrNot}>{errorOrNot}</p>
+        </div>
         <input type="hidden" name="contact_number" />
         <input type="hidden" value="Eliezer" name="to_name" />
 

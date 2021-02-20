@@ -90,6 +90,59 @@
       width: 50%;
     }
   }
+
+  &__form-message-container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__form-message--error {
+    background-color: #ff44449f;
+    border: 1px solid #cc0000;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include desktop {
+      background-color: #ff44449f;
+      border: 1px solid #cc0000;
+      color: white;
+      width: 100%;
+      height: 30px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__form-message--success {
+    background-color: #00c85057;
+    border: 1px solid #007e33;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include desktop {
+      background-color: #00c85057;
+      border: 1px solid #007e33;
+      color: white;
+      width: 100%;
+      height: 30px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   &__name-label {
   }
   &__name-input {
@@ -187,7 +240,7 @@
   }
   &__social--size {
     @include desktop {
-      width: 75%;
+      width: 675%;
     }
   }
 }
