@@ -34,7 +34,6 @@ export default function ContactUs() {
       setErrorOrNot("What are we chatting about?");
       setSuccessOrNot("contact__form-message--error");
     } else {
-      
       emailjs
         .sendForm(serviceId, templateId, e.target, userId)
         .then(
@@ -53,7 +52,6 @@ export default function ContactUs() {
           setSuccessOrNot("contact__form-message--success"),
           setErrorOrNot("Can't wait to chat")
         );
-      console.log(errorOrNot);
     }
   }
 

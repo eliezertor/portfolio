@@ -37,6 +37,20 @@
   width: 15%;
   height: 8%;
   margin: 0.5%;
+  -webkit-filter: grayscale(100%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%);
+  /* FF 35+ */
+}
+.skills__bem:hover, .skills__material:hover, .skills__passport:hover, .skills__git:hover, .skills__express:hover, .skills__node:hover, .skills__gsap:hover, .skills__scss:hover, .skills__react:hover, .skills__js:hover {
+  -webkit-transition: -webkit-filter 0.5s ease-in-out;
+  transition: -webkit-filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
+  -webkit-filter: grayscale(0%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%);
+  /* FF 35+ */
 }
 @media screen and (min-width: 768px) {
   .skills__bem, .skills__material, .skills__passport, .skills__git, .skills__express, .skills__node, .skills__gsap, .skills__scss, .skills__react, .skills__js {

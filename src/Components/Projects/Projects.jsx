@@ -3,7 +3,6 @@ import "./projects.scss";
 import Data from "../../data/data.json";
 import { v4 as uuidv4 } from "uuid";
 
-// console.log(Data);
 function Projects() {
   return (
     <div className="Projects">

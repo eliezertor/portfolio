@@ -75,7 +75,7 @@
   }
 }
 .about__image {
-  maxwidth: 55%;
+  max-width: 55%;
 }
 @media screen and (min-width: 768px) {
   .about__image {

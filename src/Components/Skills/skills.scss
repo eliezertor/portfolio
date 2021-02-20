@@ -3,7 +3,6 @@
 @import "../../styles/Partials/variables";
 
 .skills {
-  // background-color: black;
   width: 100%;
   height: auto;
   display: flex;
@@ -100,7 +99,6 @@
   &__passport {
     @extend .skills__bem;
     width: 12%;
-    // height: 8%;
     @include tablet {
       width: 7.5%;
     }
