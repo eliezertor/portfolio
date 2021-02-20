@@ -25,18 +25,16 @@ export default function ContactUs() {
     e.preventDefault();
 
     if (name === "") {
-      setErrorOrNot("Dont' forget you name, I need to know who you are.");
+      setErrorOrNot("Don't forget your name, I need to know who you are.");
       setSuccessOrNot("contact__form-message--error");
     } else if (email === "") {
-      setErrorOrNot("No call display here, Where do I email you? ");
+      setErrorOrNot("No call display here, where do I email you? ");
       setSuccessOrNot("contact__form-message--error");
     } else if (message === "") {
       setErrorOrNot("What are we chatting about?");
       setSuccessOrNot("contact__form-message--error");
     } else {
-      // if (successOrNot === "contact__form-message--success") {
-      //   setErrorOrNot("Cant wait to chat");
-      // }
+      
       emailjs
         .sendForm(serviceId, templateId, e.target, userId)
         .then(

@@ -3,9 +3,9 @@
 @import "../../styles/Partials/variables";
 
 .contact {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
   flex-direction: column;
   @include tablet {
     flex-direction: row;
@@ -13,6 +13,9 @@
     align-items: center;
     justify-content: center;
     height: 73.1vh;
+    @media (orientation: landscape) {
+      height: 100%;
+    }
   }
   @include desktop {
     flex-direction: row;
@@ -79,6 +82,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (orientation: landscape) {
+      height: 100%;
+    }
     // margin-top: 5%;
     @include tablet {
       width: 50%;
@@ -107,6 +113,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30px;
+    padding: 10px;
 
     @include desktop {
       background-color: #ff44449f;
@@ -118,6 +126,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 10px;
     }
   }
 
@@ -129,6 +138,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30px;
+    padding: 10px;
 
     @include desktop {
       background-color: #00c85057;
@@ -140,6 +151,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 10px;
     }
   }
 
@@ -240,7 +252,7 @@
   }
   &__social--size {
     @include desktop {
-      width: 675%;
+      width: 75%;
     }
   }
 }
