@@ -1,0 +1,181 @@
+@import '../../styles/Partials/fonts';
+@import '../../styles/Partials/mixins';
+@import '../../styles/Partials/variables';
+
+.intro {
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+  &__house {
+    width: 65%;
+    // position: relative;
+    // position: absolute;
+    position: fixed;
+    bottom: 23%;
+  }
+  &__house-door {
+    z-index: 1;
+    width: 15%;
+    position: absolute;
+    position: fixed;
+    // position: relative;
+    bottom: 23%;
+    animation: open 1s linear forwards;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    transform-origin: bottom right;
+    animation-fill-mode: forwards;
+  }
+  &__tree {
+    position: fixed;
+    width: 45%;
+    bottom: 23%;
+    left: -15%;
+    overflow: hidden;
+  }
+  &__shrub {
+    width: 25%;
+    position: fixed;
+    bottom: 23%;
+    right: -1%;
+  }
+  &__door-frame {
+    width: 20%;
+    position: fixed;
+    bottom: 23%;
+  }
+  //   &__chimney {
+  //     background-color: red;
+  //     width: 5%;
+  //   }
+}
+
+@keyframes open {
+  0% {
+    transform: rotateY(-0deg);
+
+    // transform-origin: left;
+  }
+  20% {
+    transform: rotateY(-45deg);
+    // transform-origin: left;
+  }
+  30% {
+    transform: rotateY(-60deg);
+  }
+  50% {
+    transform: rotateY(-90deg);
+  }
+  60% {
+    transform: rotateY(-100deg);
+  }
+  75% {
+    transform: rotateY(-110deg);
+  }
+  100% {
+    transform: rotateY(-115deg);
+    // animation-fill-mode: forwards;
+  }
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 1;
+    border-radius: 50%;
+    transform: scale(1);
+  }
+  80% {
+    transform: translate3d(40px, -150px, 0px) rotate(20deg) skew(-30deg)
+      scale(2);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    border-radius: 50%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes smoke {
+  0% {
+    opacity: 1;
+    border-radius: 50%;
+    transform: scale(1);
+  }
+  40% {
+    transform: translate3d(40px, -150px, 0px) rotate(20deg) skew(-30deg)
+      scale(2);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    border-radius: 50%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#chimney-main {
+  top: 185px;
+  position: fixed;
+  left: 760px;
+}
+
+#chimney-smoke-box {
+  height: 50px;
+  left: 23%;
+  top: 36%;
+  position: fixed;
+  width: 15px;
+}
+
+.chimney-smoke {
+  animation: smoke 3.5s infinite ease-out;
+  -webkit-animation: smoke 3.5s infinite ease-out;
+  background: #747272;
+  background: -webkit-repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    #7e7d7d 50%
+  );
+  background: -o-repeating-linear-gradient(90deg, transparent 0%, #949393 50%);
+  background: -moz-repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    #a7a5a5 50%
+  );
+  background: repeating-linear-gradient(90deg, transparent 0%, #9b9999 50%);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+#chimney-smoke2 {
+  top: -55px;
+  animation-delay: 0.5s;
+}
+#chimney-smoke3 {
+  top: -105px;
+  animation-delay: 1s;
+}
+#chimney-smoke4 {
+  top: -155px;
+  animation-delay: 1.5s;
+}
+#chimney-smoke5 {
+  top: -205px;
+  animation-delay: 2.5s;
+}
+#chimney-smoke6 {
+  top: -255px;
+  animation-delay: 3s;
+}
