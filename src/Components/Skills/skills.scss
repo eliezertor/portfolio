@@ -1,6 +1,6 @@
-@import "../../styles/Partials/fonts";
-@import "../../styles/Partials/mixins";
-@import "../../styles/Partials/variables";
+@import '../../styles/Partials/fonts';
+@import '../../styles/Partials/mixins';
+@import '../../styles/Partials/variables';
 
 .skills {
   width: 100%;
@@ -11,7 +11,8 @@
   padding-top: 15%;
   padding-bottom: 5%;
   @include tablet {
-    padding-top: 5%;
+    padding: 5% 0;
+    // height: 50vh;
   }
   @include desktop {
     padding-bottom: 0px;

@@ -75,7 +75,7 @@
     {
       "image": "./assets/images/SafelyPaid.png",
       "name": "SafelyPaid",
-      "description": "SafelyPaid is a safe platform and web app that helps users secure their online transactions on C2C marketplaces like Kijiji and Craigslist.",
+      "description": "SafelyPaid is a web app that helps users secure their online transactions on C2C marketplaces like Kijiji and Craigslist.",
       "descriptionList": [
         {
           "item": "Mobile-friendly frontend with HTML5, CSS3, BEM, Sass, JavaScript, React, and Material-UI."

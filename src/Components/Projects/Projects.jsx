@@ -19,48 +19,53 @@ function Projects() {
                       src={projects.image}
                       alt=""
                     />
+                    <div className="projects__project-overlay">
+                      <div className="projects__project-text">
+                        <ul className="projects__project-text-list">
+                          {projects.descriptionList.map((list) => {
+                            return (
+                              <li
+                                key={uuidv4()}
+                                className="projects__project-text"
+                              >
+                                {list.item}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                      <div className="projects__link-list">
+                        <a
+                          className="projects__link"
+                          href={projects.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            className="projects__link-img"
+                            src={projects.logo}
+                            alt={projects.name}
+                          />
+                        </a>
+                        <a
+                          className="projects__link"
+                          href={projects.webSite}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            className="projects__link-img"
+                            src={projects.linkImg}
+                            alt={projects.name}
+                          />
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  {/* <div className="projects__link-list">
-                    <a
-                      className="projects__link"
-                      href={projects.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        className="projects__link-img"
-                        src={projects.logo}
-                        alt={projects.name}
-                      />
-                    </a>
-                    <a
-                      className="projects__link"
-                      href={projects.webSite}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        className="projects__link-img"
-                        src={projects.linkImg}
-                        alt={projects.name}
-                      />
-                    </a>
-                  </div> */}
                 </div>
                 <p className="projects__project-description">
                   {projects.description}
                 </p>
-                <div className="projects__project-text">
-                  <ul className="projects__project-text-list">
-                    {projects.descriptionList.map((list) => {
-                      return (
-                        <li key={uuidv4()} className="projects__project-text">
-                          {list.item}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
               </>
             </div>
           );
