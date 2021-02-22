@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import House from '../../assets/icons/house.svg';
 import Door from '../../assets/icons/door2.svg';
 import Tree from '../../assets/icons/tree7.svg';
@@ -53,6 +53,7 @@ function Intro() {
           </div>
         </div>
       </div>
+      {/* <button onScroll={() => zoom()}></button> */}
     </div>
   );
 }
