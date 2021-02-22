@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import Www from "../../assets/Logo/Eliezer-Logo.png";
-import "./Navbar.scss";
-import Close from "../../assets/icons/window-close.svg";
-import Data from "../../data/data.json";
-import { Link } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
+import React, { useState } from 'react';
+import Www from '../../assets/Logo/Eliezer-Logo.png';
+import './Navbar.scss';
+import Close from '../../assets/icons/window-close.svg';
+import Data from '../../data/data.json';
+import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 
 const Navbar = () => {
   let [ham, setHam] = useState(false);
-  let [navBarMenu, setNavBarMenu] = useState("navbar__menu--hide");
+  let [navBarMenu, setNavBarMenu] = useState('navbar__menu--hide');
 
   let hamburger = () => {
     if (ham === false) {
       setHam(true);
-      setNavBarMenu("navbar__menu");
+      setNavBarMenu('navbar__menu');
     } else if (ham === true) {
       setHam(false);
-      setNavBarMenu("navbar__menu--hide");
+      setNavBarMenu('navbar__menu--hide');
     }
   };
 
@@ -26,12 +26,12 @@ const Navbar = () => {
   let projects;
   let contact;
 
-  if (location === "/") {
-    home = "navbar__list-link--active";
-  } else if (location === "/Projects") {
-    projects = "navbar__list-link--active";
-  } else if (location === "/Contact") {
-    contact = "navbar__list-link--active";
+  if (location === '/') {
+    home = 'navbar__list-link--active';
+  } else if (location === '/Projects') {
+    projects = 'navbar__list-link--active';
+  } else if (location === '/Contact') {
+    contact = 'navbar__list-link--active';
   }
 
   return (
@@ -90,7 +90,7 @@ const Navbar = () => {
                     href={social.link}
                     className="navbar__menu-social-links "
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <img
                       onClick={() => hamburger()}

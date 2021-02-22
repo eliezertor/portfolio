@@ -1,38 +1,38 @@
-import React, { useState } from "react";
-import emailjs from "emailjs-com";
-import ReCAPTCHA from "react-google-recaptcha";
-import Data from "../../data/data.json";
-import { v4 as uuidv4 } from "uuid";
-import Plane from "../../assets/icons/paper-plane-solid.svg";
-import "./contact.scss";
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-google-recaptcha';
+import Data from '../../data/data.json';
+import { v4 as uuidv4 } from 'uuid';
+import Plane from '../../assets/icons/paper-plane-solid.svg';
+import './contact.scss';
 
 export default function ContactUs() {
-  let serviceId = "service_wk5nili";
-  let templateId = "template_ume76um";
-  let userId = "user_fgqf1auVWi89eBgAagyXe";
-  let key = "6LcNHl8aAAAAAHGZukEemWMX0xlcmM1R9guxd3T1";
-  let [name, setName] = useState("");
-  let [email, setEmail] = useState("");
-  let [message, setMessage] = useState("");
-  let [successOrNot, setSuccessOrNot] = useState("");
-  let [errorOrNot, setErrorOrNot] = useState("");
+  let serviceId = 'service_wk5nili';
+  let templateId = 'template_ume76um';
+  let userId = 'user_fgqf1auVWi89eBgAagyXe';
+  let key = '6LcNHl8aAAAAAHGZukEemWMX0xlcmM1R9guxd3T1';
+  let [name, setName] = useState('');
+  let [email, setEmail] = useState('');
+  let [message, setMessage] = useState('');
+  let [successOrNot, setSuccessOrNot] = useState('');
+  let [errorOrNot, setErrorOrNot] = useState('');
 
   function onChange(value) {
-    console.log("Captcha value:", value);
+    console.log('Captcha value:', value);
   }
 
   function sendEmail(e) {
     e.preventDefault();
 
-    if (name === "") {
+    if (name === '') {
       setErrorOrNot("Don't forget your name, I need to know who you are.");
-      setSuccessOrNot("contact__form-message--error");
-    } else if (email === "") {
-      setErrorOrNot("No call display here, where do I email you? ");
-      setSuccessOrNot("contact__form-message--error");
-    } else if (message === "") {
-      setErrorOrNot("What are we chatting about?");
-      setSuccessOrNot("contact__form-message--error");
+      setSuccessOrNot('contact__form-message--error');
+    } else if (email === '') {
+      setErrorOrNot('No call display here, where do I email you? ');
+      setSuccessOrNot('contact__form-message--error');
+    } else if (message === '') {
+      setErrorOrNot('What are we chatting about?');
+      setSuccessOrNot('contact__form-message--error');
     } else {
       emailjs
         .sendForm(serviceId, templateId, e.target, userId)
@@ -44,12 +44,12 @@ export default function ContactUs() {
             console.log(error.text);
             if (error.text) {
               setErrorOrNot(error.text);
-              setSuccessOrNot("contact__form-message--error");
+              setSuccessOrNot('contact__form-message--error');
             }
           }
         )
         .then(
-          setSuccessOrNot("contact__form-message--success"),
+          setSuccessOrNot('contact__form-message--success'),
           setErrorOrNot("Can't wait to chat")
         );
     }
@@ -118,7 +118,7 @@ export default function ContactUs() {
               href={social.link}
               className="navbar__menu-social-links contact__social-link-container"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <img
                 src={`${social.logo}`}

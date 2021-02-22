@@ -102,7 +102,7 @@
 }
 @media screen and (min-width: 768px) {
   .about__container-paragraph {
-    width: 60%;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

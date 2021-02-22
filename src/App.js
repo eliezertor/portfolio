@@ -1,12 +1,13 @@
-import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/Home/Home";
-import Projects from "./Components/Projects/Projects";
-import Contact from "./Components/Contact/Contact";
-import Policy from "./Components/Policy/Policy";
-import Footer from "./Components/Footer/Footer";
-import Error from "./Components/Error/Error";
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+import Home from './Components/Home/Home';
+import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact';
+import Policy from './Components/Policy/Policy';
+import Footer from './Components/Footer/Footer';
+import Error from './Components/Error/Error';
 
 function App() {
   return (
