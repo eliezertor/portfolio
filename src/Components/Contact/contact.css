@@ -9,6 +9,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 5%;
 }
 @media screen and (min-width: 768px) {
   .contact {
@@ -76,6 +77,9 @@
   text-align: center;
   margin: 5%;
   font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 22px;
 }
 @media screen and (min-width: 1200px) {
   .contact__why-title {
@@ -97,7 +101,9 @@
   display: flex;
   text-align: center;
   margin: 5%;
-  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 22px;
   font-weight: 200;
 }
 @media screen and (min-width: 1200px) {
@@ -120,9 +126,12 @@
 .contact__why-me--bullet {
   color: white;
   width: 80%;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 10px 0 0 50px;
   font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 22px;
 }
 .contact__form {
   display: -webkit-box;
@@ -384,6 +393,29 @@
 .contact__message-input::placeholder {
   padding: 60px;
 }
+.contact__send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .contact__send {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .contact__btn {
   width: 150px;
   height: 30px;
@@ -391,7 +423,8 @@
   margin-top: 10px;
 }
 .contact__btn:hover {
-  fill: #e63838;
+  -webkit-filter: invert(55%) sepia(45%) saturate(846%) hue-rotate(346deg) brightness(91%) contrast(87%);
+          filter: invert(55%) sepia(45%) saturate(846%) hue-rotate(346deg) brightness(91%) contrast(87%);
 }
 @media screen and (min-width: 768px) {
   .contact__btn {
@@ -413,13 +446,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 .contact__social-link-container {
-  width: 63px;
+  width: 93px;
+}
+.contact__social--size {
+  margin: 72% auto;
+  width: 45%;
 }
 @media screen and (min-width: 1200px) {
   .contact__social--size {
-    width: 75%;
+    width: 55%;
+    margin: 30% auto;
   }
 }
 /*# sourceMappingURL=contact.css.map */

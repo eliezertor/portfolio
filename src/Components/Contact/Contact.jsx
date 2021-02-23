@@ -107,8 +107,15 @@ export default function ContactUs() {
           id="message"
           onChange={(e) => setMessage(e.target.value)}
         />
-        <ReCAPTCHA sitekey={key} onChange={onChange} theme="dark" />
-        <input className="contact__btn" type="image" alt="Send" src={Plane} />
+        <div className="contact__send">
+          <ReCAPTCHA
+            size="normal"
+            sitekey={key}
+            onChange={onChange}
+            theme="dark"
+          />
+          <input className="contact__btn" type="image" alt="Send" src={Plane} />
+        </div>
       </form>
       <div className="navbar__menu-social contact__social-container ">
         {Data.social.map((social) => {

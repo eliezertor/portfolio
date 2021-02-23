@@ -129,6 +129,9 @@
   width: 77%;
   font-size: 0.8rem;
   margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 22px;
 }
 @media screen and (min-width: 1200px) {
   .projects__project-description {
