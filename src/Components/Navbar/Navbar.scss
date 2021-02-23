@@ -16,7 +16,7 @@
     align-items: center;
   }
   @include desktop {
-    margin-bottom: 2%;
+    padding-bottom: 2%;
   }
 
   &__logo-container {
@@ -114,6 +114,7 @@
     visibility: visible;
     opacity: 1;
     transition: visibility 0s linear 0.3s, opacity 900ms;
+    z-index: 1;
     @include desktop {
       position: unset;
       visibility: unset;
@@ -159,6 +160,7 @@
     transition: visibility 0s linear 0.3s, opacity 900ms;
     top: 50%;
     left: -0%;
+    z-index: 1;
     @include desktop {
       position: unset;
       transition: unset;
@@ -277,6 +279,7 @@
       margin: unset;
       align-self: center;
       width: 100%;
+      display: none;
     }
   }
 
