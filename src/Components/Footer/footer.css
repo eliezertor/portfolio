@@ -9,7 +9,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #141e30;
+  background-color: #243b55;
+  z-index: 1;
 }
 .footer__logo-btn {
   border: none;
@@ -35,10 +36,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 2%;
   }
 }
 .footer__logo {
   width: 20px;
+  z-index: 1;
 }
 .footer__date {
   color: white;
@@ -52,6 +55,11 @@
 @media screen and (min-width: 768px) {
   .footer__date {
     font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__date {
+    margin-top: 0.5%;
   }
 }
 .footer__policy {

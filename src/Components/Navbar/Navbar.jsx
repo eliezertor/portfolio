@@ -28,7 +28,7 @@ const Navbar = () => {
 
   if (location === '/') {
     home = 'navbar__list-link--active';
-  } else if (location === '/Projects') {
+  } else if (location === '/About') {
     projects = 'navbar__list-link--active';
   } else if (location === '/Contact') {
     contact = 'navbar__list-link--active';
@@ -38,7 +38,8 @@ const Navbar = () => {
     <nav id="top" className="navbar">
       <div className="navbar__logo-container">
         <Link className="navbar__logo-link" to="/">
-          <img className="navbar__logo" src={Www} alt="ET logo" />
+          <h1 className="navbar__logo">ET</h1>
+          {/* <img className="navbar__logo" src={Www} alt="ET logo" /> */}
         </Link>
         <div onClick={hamburger} className="navbar__mobile">
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-top "></div>
@@ -68,9 +69,9 @@ const Navbar = () => {
               <Link
                 onClick={() => hamburger()}
                 className={`navbar__list-link ${projects}`}
-                to="/Projects"
+                to="/About"
               >
-                My Work
+                About
               </Link>
             </li>
             <li className="navbar__list-item">

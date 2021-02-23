@@ -55,10 +55,11 @@
     filter: grayscale(100%); /* FF 35+ */
 
     &:hover {
-      transition: filter 0.5s ease-in-out;
+      transition: filter 0.1s ease-in-out;
       -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
       filter: grayscale(0%); /* FF 35+ */
     }
+
     @include tablet {
       width: 8%;
     }
@@ -71,6 +72,10 @@
     @extend .skills__bem;
     width: 12.2%;
     height: 8%;
+    // &:hover {
+    //   box-shadow: -3px 3px gray;
+    //   transform: translate(3px);
+    // }
     @include tablet {
       width: 8%;
     }

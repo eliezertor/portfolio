@@ -13,9 +13,9 @@
     flex-flow: wrap;
     align-items: center;
     justify-content: center;
-    height: 73.1vh;
+    height: 78.1vh;
     @media (orientation: landscape) {
-      height: 100%;
+      height: 77vh;
     }
   }
   @include desktop {
@@ -23,7 +23,7 @@
     flex-flow: wrap;
     align-items: center;
     justify-content: center;
-    height: 71.8vh;
+    height: 76.8vh;
   }
 
   &__why {
@@ -95,7 +95,13 @@
       width: 50%;
     }
     @include desktop {
+      height: 70%;
       width: 50%;
+      margin-top: 8%;
+    }
+    @media (orientation: landscape) {
+      height: 70%;
+      margin-top: 5%;
     }
   }
 

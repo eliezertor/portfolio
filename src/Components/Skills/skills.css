@@ -66,10 +66,10 @@
   /* FF 35+ */
 }
 .skills__bem:hover, .skills__material:hover, .skills__passport:hover, .skills__git:hover, .skills__express:hover, .skills__node:hover, .skills__gsap:hover, .skills__scss:hover, .skills__react:hover, .skills__js:hover {
-  -webkit-transition: -webkit-filter 0.5s ease-in-out;
-  transition: -webkit-filter 0.5s ease-in-out;
-  transition: filter 0.5s ease-in-out;
-  transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
+  -webkit-transition: -webkit-filter 0.1s ease-in-out;
+  transition: -webkit-filter 0.1s ease-in-out;
+  transition: filter 0.1s ease-in-out;
+  transition: filter 0.1s ease-in-out, -webkit-filter 0.1s ease-in-out;
   -webkit-filter: grayscale(0%);
   /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(0%);

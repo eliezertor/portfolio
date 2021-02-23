@@ -1,0 +1,56 @@
+@import '../../styles/Partials/fonts';
+@import '../../styles/Partials/mixins';
+@import '../../styles/Partials/variables';
+
+.about {
+  background-color: #141e30;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 22px;
+  font-size: 0.9rem;
+
+  &__main {
+    color: white;
+    margin: 0 auto;
+    width: 80%;
+  }
+  &__title {
+    color: white;
+  }
+  &__heading {
+    color: white;
+  }
+  &__highlighter {
+    background-color: #db7e26b6;
+  }
+  &__text {
+    color: white;
+  }
+  .custom-shape-divider-bottom-1614098670 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1614098670 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 228px;
+  }
+
+  .custom-shape-divider-bottom-1614098670 .shape-fill {
+    fill: #243b55;
+  }
+}

@@ -24,7 +24,7 @@
 }
 @media screen and (min-width: 1200px) {
   .navbar {
-    padding-bottom: 2%;
+    padding: unset;
   }
 }
 .navbar__logo-container {
@@ -55,7 +55,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 45%;
+  width: 15%;
+  margin-left: 20px;
+  text-decoration: none;
 }
 @media (orientation: landscape) {
   .navbar__logo-link {
@@ -75,6 +77,8 @@
 }
 .navbar__logo {
   width: 100%;
+  text-decoration: none;
+  color: white;
 }
 .navbar__mobile {
   margin-right: 20px;
@@ -151,8 +155,8 @@
             flex-direction: unset;
     -ms-flex-item-align: center;
         align-self: center;
-    width: 25%;
-    margin-right: 2%;
+    width: 20%;
+    margin-right: 20px;
   }
 }
 .navbar__menu-btn {
@@ -209,8 +213,8 @@
     visibility: unset;
     -ms-flex-item-align: center;
         align-self: center;
-    width: 25%;
-    margin-right: 2%;
+    width: 20%;
+    margin-right: 20px;
   }
 }
 .navbar__menu-list {
@@ -323,7 +327,7 @@
   }
 }
 .navbar__list-link--active {
-  color: #db7e26b6;
+  color: #db7c26;
 }
 .navbar__menu-social {
   display: -webkit-box;
@@ -382,6 +386,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  fill: #db7c26;
+}
+.navbar__menu-social-links-item:hover {
+  -webkit-filter: invert(55%) sepia(45%) saturate(846%) hue-rotate(346deg) brightness(91%) contrast(87%);
+          filter: invert(55%) sepia(45%) saturate(846%) hue-rotate(346deg) brightness(91%) contrast(87%);
 }
 @media screen and (min-width: 1200px) {
   .navbar {

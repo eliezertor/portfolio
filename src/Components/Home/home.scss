@@ -2,7 +2,7 @@
 @import '../../styles/Partials/mixins';
 @import '../../styles/Partials/variables';
 
-.about {
+.home {
   display: flex;
   height: 100%;
   width: 100%;
@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     @include tablet {
       width: 40%;
       justify-content: flex-start;
@@ -26,6 +27,7 @@
     @include desktop {
       align-content: flex-end;
       justify-content: center;
+      // padding-top: 2%;
     }
   }
 
@@ -69,6 +71,7 @@
     }
     @include desktop {
       align-items: center;
+      padding-top: 3%;
     }
   }
 
@@ -110,6 +113,12 @@
     align-items: center;
     flex-direction: column;
     margin-top: 60px;
+    @include desktop {
+      flex-direction: row;
+      width: 50%;
+      justify-self: center;
+      margin: 90px auto 60px auto;
+    }
   }
 
   &__btn--fill {
@@ -129,24 +138,29 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-   
+    &:hover {
+      box-shadow: -3px 3px gray;
+      transform: translate(3px);
+    }
   }
-  &__btn {
+
+  &__btn-link {
+    text-decoration: none;
+    color: white;
     outline: #db7c26;
-    border-color: #db7c26;
+    border: 1px solid #db7c26;
     background-color: transparent;
     border-radius: 3px;
     width: 200px;
     height: 45px;
     margin-left: 50px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.8px;
-    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 40px auto;
-    &-link {
-      text-decoration: none;
-      color: white;
+    &:hover {
+      box-shadow: -3px 3px gray;
+      transform: translate(3px);
     }
   }
 
@@ -160,7 +174,7 @@
     width: 14%;
     margin: 0 5%;
     @include desktop {
-      width: 5%;
+      width: 3%;
       margin: 0 3%;
     }
   }

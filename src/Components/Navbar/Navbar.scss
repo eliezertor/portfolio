@@ -9,14 +9,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  // margin-bottom: 5%;
   padding-top: 2%;
   @include tablet {
     padding-top: 2%;
     align-items: center;
   }
   @include desktop {
-    padding-bottom: 2%;
+    // padding-bottom: 1%;
+    padding: unset;
   }
 
   &__logo-container {
@@ -35,7 +35,9 @@
   &__logo-link {
     display: flex;
     align-items: center;
-    width: 45%;
+    width: 15%;
+    margin-left: 20px;
+    text-decoration: none;
     @media (orientation: landscape) {
       width: 25%;
     }
@@ -50,6 +52,8 @@
 
   &__logo {
     width: 100%;
+    text-decoration: none;
+    color: white;
   }
 
   &__mobile {
@@ -127,8 +131,8 @@
       background-color: unset;
       flex-direction: unset;
       align-self: center;
-      width: 25%;
-      margin-right: 2%;
+      width: 20%;
+      margin-right: 20px;
     }
   }
 
@@ -170,8 +174,8 @@
       align-self: flex-end;
       visibility: unset;
       align-self: center;
-      width: 25%;
-      margin-right: 2%;
+      width: 20%;
+      margin-right: 20px;
     }
   }
 
@@ -261,7 +265,7 @@
   }
 
   &__list-link--active {
-    color: #db7e26b6;
+    color: #db7c26;
   }
 
   &__menu-social {
@@ -299,6 +303,11 @@
   &__menu-social-links-item {
     width: 80%;
     align-items: center;
+    fill: #db7c26;
+    &:hover {
+      filter: invert(55%) sepia(45%) saturate(846%) hue-rotate(346deg)
+        brightness(91%) contrast(87%);
+    }
   }
   @include desktop {
     width: 100%;

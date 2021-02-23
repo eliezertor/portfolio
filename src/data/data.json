@@ -73,9 +73,9 @@
   ],
   "projects": [
     {
-      "image": "./assets/images/safelypaidgif.gif",
+      "image": "./assets/images/safelypaidgif2.gif",
       "name": "SafelyPaid",
-      "description": "SafelyPaid helps users secure their online transactions on C2C marketplaces like Kijiji and Craigslist.",
+      "description": "SafelyPaid helps modern savvy shoppers secure their online transactions on C2C marketplaces like Kijiji and Craigslist.",
       "descriptionList": [
         {
           "item": "Mobile-friendly frontend with HTML5, CSS3, BEM, Sass, JavaScript, React, and Material-UI."
@@ -93,7 +93,7 @@
       "webSite": "https://safelypaid.herokuapp.com/"
     },
     {
-      "image": "./assets/images/fsp.png",
+      "image": "./assets/images/fsp.gif",
       "name": "For Sensitive People",
       "description": "FSP helps people determine if video content is safe to watch for specific triggers, like scenes of abuse or animal cruelty.",
 
@@ -114,7 +114,7 @@
       "webSite": "https://www.forsensativepeople.com/"
     },
     {
-      "image": "./assets/images/adidas.gif",
+      "image": "./assets/images/adidasgif2.gif",
       "name": "Adidas",
       "description": "A collaborative project with adidas to ideate the future of sports eCommerce and increase environmental sustainability.",
 

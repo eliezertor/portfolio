@@ -12,59 +12,56 @@ let resume =
 const Home = () => {
   return (
     <>
-      <div className="about">
-        <div className="about__container-paragraph">
-          <main className="about__paragraph">
+      <div className="home">
+        <div className="home__container-paragraph">
+          <main className="home__paragraph">
             {/* <h2>Hola! </h2> */}
             <p>&#60;et&#62;</p>
-            <h2 className="about__break">
-              I'm <span className="about__highlighter">Eliezer Toribio.</span>
+            <h2 className="home__break">
+              I'm <span className="home__highlighter">Eliezer Toribio.</span>
             </h2>
-            <p className="about__break">(Eli for short. Eh-li. Not Ee-lai.)</p>
-            <p className="about__break">
+            <p className="home__break">(Eli for short. Eh-li. Not Ee-lai.)</p>
+            <p className="home__break">
               I’m a career switcher, a Brainstation grad, and a passionate&nbsp;
-              <span className="about__highlighter">full-stack engineer.</span>
+              <span className="home__highlighter">full-stack engineer.</span>
             </p>
-            <p className="about__break">
+            <p className="home__break">
               I’m looking for a position as part of a growing, innovative team
               that’s ready to add an extroverted developer,&nbsp;
-              <span className="about__highlighter">expert builder,</span>
+              <span className="home__highlighter">expert builder,</span>
               &nbsp;and overall friendly human to their team.
             </p>
 
-            <p className="about__break">
+            <p className="home__break">
               I promise to put a shine on your big dreams with every little git
               commit.
             </p>
-            <p className="about__break">&#60;&#47;et&#62;</p>
-            <div className="about__btn-container">
+            <p className="home__break">&#60;&#47;et&#62;</p>
+            <div className="home__btn-container">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={resume}
-                className="about__btn--fill"
+                className="home__btn--fill"
               >
                 DOWNLOAD RESUME
               </a>
-              <button className="about__btn">
-                {' '}
-                <Link className="about__btn-link" to="/Contact">
-                  CONTACT ME
-                </Link>
-              </button>
+              <Link className="home__btn-link" to="/Contact">
+                CONTACT ME
+              </Link>
             </div>
           </main>
         </div>
 
         <Skills />
         <Projects />
-        <div className="about__social--links ">
+        <div className="home__social--links ">
           {Data.social.map((social) => {
             return (
               <a
                 key={uuidv4()}
                 href={social.link}
-                className="about__social-links"
+                className="home__social-links"
                 target="_blank"
                 rel="noopener noreferrer"
               >
