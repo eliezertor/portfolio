@@ -1,11 +1,13 @@
 import React from 'react';
 import './home.scss';
-// import eliezer from '../../assets/images/eliezer3.jpg';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
+import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
-
 import Data from '../../data/data.json';
+
+let resume =
+  'https://drive.google.com/uc?export=download&id=1EMfg5NFd-GNQVA1PpIvubErRC-uoe4AO';
 
 const Home = () => {
   return (
@@ -36,8 +38,20 @@ const Home = () => {
             </p>
             <p className="about__break">&#60;&#47;et&#62;</p>
             <div className="about__btn-container">
-              <button className="about__btn--fill">DOWNLOAD RESUME</button>
-              <button className="about__btn"> CONTACT ME</button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={resume}
+                className="about__btn--fill"
+              >
+                DOWNLOAD RESUME
+              </a>
+              <button className="about__btn">
+                {' '}
+                <Link className="about__btn-link" to="/Contact">
+                  CONTACT ME
+                </Link>
+              </button>
             </div>
           </main>
         </div>
