@@ -1,11 +1,12 @@
-@import "../../styles/Partials/fonts";
-@import "../../styles/Partials/mixins";
-@import "../../styles/Partials/variables";
+@import '../../styles/Partials/fonts';
+@import '../../styles/Partials/mixins';
+@import '../../styles/Partials/variables';
 
 .footer {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  background-color: #141e30;
 
   &__logo-btn {
     border: none;

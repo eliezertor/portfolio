@@ -4,14 +4,29 @@
 
 .projects {
   display: flex;
+  // background-image: url('../../assets/images/tilt.svg');
   // height: 100vh;
+
+  position: relative;
   @media (orientation: landscape) {
     height: 100vh;
   }
   @include tablet {
   }
 
+  &__title {
+    color: #db7c26;
+    font-weight: 300;
+    font-size: 0.8rem;
+    align-self: flex-start;
+    margin-left: 35px;
+    margin: 0 auto;
+  }
+
   &__container {
+    padding-top: 70px;
+    background-color: #141e30;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,13 +39,14 @@
     }
     @media (orientation: landscape) {
       height: 100%;
+      flex-direction: row;
     }
   }
   &__project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background-color: rgba(24, 24, 24, 0.479);
+    // background-color: rgba(24, 24, 24, 0.179);
     width: 90%;
     border-radius: 5px;
     margin: 6% 2%;
@@ -43,11 +59,17 @@
     }
   }
 
+  &__test {
+    background-color: #db7e26b6;
+  }
   &__project-title {
     color: white;
+    // background-color: #db7e26b6;
     margin: 20px 0;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    line-height: 22px;
     @include tablet {
       font-size: 1.7em;
     }
@@ -73,7 +95,7 @@
 
   &__project-description {
     color: white;
-    width: 80%;
+    width: 77%;
     font-size: 0.8rem;
     margin-top: 0;
     @include desktop {
@@ -95,7 +117,7 @@
   }
 
   &__project-image {
-    width: 90%;
+    width: 100%;
     border-radius: 3px;
     margin-bottom: 10px;
     @include tablet {

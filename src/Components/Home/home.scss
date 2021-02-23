@@ -61,6 +61,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #243b55;
     @include tablet {
       width: 100%;
       justify-content: center;
@@ -87,7 +88,7 @@
   }
 
   &__highlighter {
-    background-color: rgba(9, 226, 20, 0.322);
+    background-color: #db7e26b6;
   }
 
   &__break {
@@ -100,5 +101,61 @@
 
   &__paragraph-cta {
     color: #289eff;
+  }
+
+  &__btn-container {
+    width: 100;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  &__btn--fill {
+    background-color: #db7c26;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+    height: 45px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+    // margin: 40px auto;
+    // margin-top: 40px;
+    // margin-bottom: 30px;
+  }
+  &__btn {
+    outline: #db7c26;
+    border-color: #db7c26;
+    background-color: transparent;
+    border-radius: 3px;
+    width: 200px;
+    height: 45px;
+    margin-left: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+    margin: 40px auto;
+    // margin-bottom: 30px;
+  }
+  &__social--links {
+    background-color: #141e30;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  &__social-links {
+    width: 14%;
+    margin: 0 5%;
+    @include desktop {
+      width: 5%;
+      margin: 0 3%;
+    }
   }
 }

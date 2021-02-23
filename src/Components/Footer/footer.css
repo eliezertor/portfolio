@@ -9,6 +9,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #141e30;
 }
 .footer__logo-btn {
   border: none;

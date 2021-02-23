@@ -1,4 +1,5 @@
 .navbar {
+  background-color: #243b55;
   width: 100%;
   height: 7vh;
   display: -webkit-box;
@@ -11,7 +12,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 5%;
   padding-top: 2%;
 }
 @media screen and (min-width: 768px) {
@@ -321,7 +321,7 @@
   }
 }
 .navbar__list-link--active {
-  color: rgba(9, 226, 20, 0.322);
+  color: #db7e26b6;
 }
 .navbar__menu-social {
   display: -webkit-box;

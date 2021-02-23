@@ -1,4 +1,26 @@
+.custom-shape-divider-top-1614044863 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1614044863 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1614044863 .shape-fill {
+  fill: #243b55;
+}
+
 .skills {
+  position: relative;
+  background-color: #141e30;
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -24,6 +46,7 @@
   }
 }
 .skills__container {
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
