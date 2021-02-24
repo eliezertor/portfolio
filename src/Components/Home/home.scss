@@ -47,9 +47,6 @@
 
   &__image {
     max-width: 55%;
-    // border-radius: 50%;
-    // overflow: hidden;
-
     @include tablet {
       width: 90%;
     }
@@ -64,6 +61,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #243b55;
+    padding: 30px 0 0 0;
     @include tablet {
       width: 100%;
       justify-content: center;
@@ -86,7 +84,9 @@
       font-size: 1em;
     }
     @include desktop {
-      margin: 0;
+      margin: 0 auto;
+      width: 60%;
+      // margin-left: 10%;
     }
   }
 
@@ -96,6 +96,16 @@
 
   &__break {
     margin: 15px 0;
+    font-weight: 200;
+    font-size: 1.1rem;
+    &-header {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    &-heading {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
   }
 
   &__paragraph-link {
@@ -169,6 +179,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    padding-bottom: 5%;
   }
   &__social-links {
     width: 14%;

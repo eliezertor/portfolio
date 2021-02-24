@@ -16,11 +16,11 @@ const Home = () => {
         <div className="home__container-paragraph">
           <main className="home__paragraph">
             {/* <h2>Hola! </h2> */}
-            <p>&#60;et&#62;</p>
-            <h2 className="home__break">
-              I'm <span className="home__highlighter">Eliezer Toribio.</span>
+            <p className="home__break">&#60;et&#62;</p>
+            <h2 className="home__break home__break-header">
+              I'm <span className="home__highlighter">Eliezer Toribio</span>.
             </h2>
-            <p className="home__break">(Eli for short. Eh-li. Not Ee-lai.)</p>
+            <p className="home__break home__break-heading">(Eli for short. Eh-li. Not Ee-lai.)</p>
             <p className="home__break">
               I’m a career switcher, a Brainstation grad, and a passionate&nbsp;
               <span className="home__highlighter">full-stack engineer.</span>
@@ -47,7 +47,7 @@ const Home = () => {
                 DOWNLOAD RESUME
               </a>
               <Link className="home__btn-link" to="/Contact">
-                CONTACT ME
+                CONTACT
               </Link>
             </div>
           </main>

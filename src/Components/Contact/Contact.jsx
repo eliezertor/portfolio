@@ -21,6 +21,22 @@ export default function ContactUs() {
     console.log('Captcha value:', value);
   }
 
+  let nameValue = document.getElementById('from_name');
+  let messageValue = document.getElementById('message');
+  let emailValue = document.getElementById('from_email');
+
+  if (name !== '') {
+    nameValue.style.backgroundImage = 'none';
+  }
+
+  if (email !== '') {
+    emailValue.style.backgroundImage = 'none';
+  }
+
+  if (message !== '') {
+    messageValue.style.backgroundImage = 'none';
+  }
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -59,7 +75,7 @@ export default function ContactUs() {
     <div className="contact">
       <div className="contact__why">
         <h5 className="contact__why-title">Say “Hola”</h5>
-        <p className="contact__why-me">Especially if...</p>
+        <h5 className="contact__why-me">Especially if...</h5>
         <ul className="contact__why-me-list">
           <li className="contact__why-me--bullet">
             You need a big-picture-thinking, problem-solving full-stack
@@ -114,7 +130,14 @@ export default function ContactUs() {
             onChange={onChange}
             theme="dark"
           />
-          <input className="contact__btn" type="image" alt="Send" src={Plane} />
+          <div className="contact__container-btn">
+            <input
+              className="contact__btn"
+              type="image"
+              alt="Send"
+              src={Plane}
+            />
+          </div>
         </div>
       </form>
       <div className="navbar__menu-social contact__social-container ">
@@ -135,6 +158,19 @@ export default function ContactUs() {
             </a>
           );
         })}
+      </div>
+      <div class="custom-shape-divider-bottom-1614098670">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </div>
   );

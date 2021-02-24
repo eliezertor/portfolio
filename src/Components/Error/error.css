@@ -1,5 +1,6 @@
 .error {
   height: 100vh;
+  background-color: #141e30;
 }
 .error__container {
   display: -webkit-box;
@@ -33,6 +34,8 @@
 .error__img {
   width: 20%;
   margin: 50px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 .error__btn {
   background-color: red;

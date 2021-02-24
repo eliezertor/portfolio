@@ -10,12 +10,15 @@
   align-items: center;
   flex-direction: column;
   padding-top: 2%;
+  justify-content: center;
   @include tablet {
     padding-top: 2%;
     align-items: center;
   }
   @include desktop {
-    // padding-bottom: 1%;
+    padding: 0 0 1% 0;
+  }
+  @include desktopPlus {
     padding: unset;
   }
 
@@ -54,6 +57,22 @@
     width: 100%;
     text-decoration: none;
     color: white;
+    image-rendering: pixelated;
+    @include tablet {
+      width: 40%;
+    }
+    @include desktop {
+      width: 55%;
+    }
+    &-bike {
+      width: 45%;
+      @include tablet {
+        width: 15%;
+      }
+      @include desktop {
+        width: 20%;
+      }
+    }
   }
 
   &__mobile {
@@ -156,6 +175,8 @@
     width: 30px;
     margin-left: 20px;
   }
+
+  // ! Transition displays on breakpoint 1199 to 1200. Make easter egg for fun
 
   &__menu--hide {
     position: absolute;

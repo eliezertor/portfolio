@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import Www from '../../assets/Logo/Eliezer-Logo.png';
 import './Navbar.scss';
 import Close from '../../assets/icons/window-close.svg';
 import Data from '../../data/data.json';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import ET from '../../assets/Logo/ETM.png';
+import Bike from '../../assets/Logo/bike.png';
 
 const Navbar = () => {
   let [ham, setHam] = useState(false);
@@ -12,11 +13,11 @@ const Navbar = () => {
 
   let hamburger = () => {
     if (ham === false) {
-      setHam(true);
       setNavBarMenu('navbar__menu');
+      setHam(true);
     } else if (ham === true) {
-      setHam(false);
       setNavBarMenu('navbar__menu--hide');
+      setHam(false);
     }
   };
 
@@ -38,10 +39,11 @@ const Navbar = () => {
     <nav id="top" className="navbar">
       <div className="navbar__logo-container">
         <Link className="navbar__logo-link" to="/">
-          <h1 className="navbar__logo">ET</h1>
-          {/* <img className="navbar__logo" src={Www} alt="ET logo" /> */}
+          {/* <h1 className="navbar__logo">ET</h1> */}
+          <img className="navbar__logo" src={ET} alt="Logo" />
+          <img className="navbar__logo-bike" src={Bike} alt="Logo" />
         </Link>
-        <div onClick={hamburger} className="navbar__mobile">
+        <div onClick={() => hamburger()} className="navbar__mobile">
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-top "></div>
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-center"></div>
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-bottom "></div>

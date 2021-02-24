@@ -1,9 +1,11 @@
-@import "../../styles/Partials/fonts";
-@import "../../styles/Partials/mixins";
-@import "../../styles/Partials/variables";
+@import '../../styles/Partials/fonts';
+@import '../../styles/Partials/mixins';
+@import '../../styles/Partials/variables';
 
 .error {
   height: 100vh;
+  background-color: #141e30;
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -21,6 +23,7 @@
   &__img {
     width: 20%;
     margin: 50px;
+    filter: invert(100%);
   }
   &__btn {
     background-color: red;

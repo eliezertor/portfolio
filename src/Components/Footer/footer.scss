@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  background-color: #243b55;
+  background-color: #141e30;
   z-index: 1;
   @include desktopPlus {
     // height: 150px;
@@ -33,6 +33,10 @@
   &__logo {
     width: 20px;
     z-index: 1;
+    &:hover {
+      filter: invert(55%) sepia(45%) saturate(846%) hue-rotate(346deg)
+        brightness(91%) contrast(87%);
+    }
   }
   &__date {
     color: white;
