@@ -191,7 +191,7 @@
             flex-direction: unset;
     -ms-flex-item-align: center;
         align-self: center;
-    width: 20%;
+    width: 23%;
     margin-right: 20px;
   }
 }
@@ -249,7 +249,7 @@
     visibility: unset;
     -ms-flex-item-align: center;
         align-self: center;
-    width: 20%;
+    width: 23%;
     margin-right: 20px;
   }
 }
@@ -268,7 +268,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.744);
+  background-color: rgba(0, 0, 0, 0.849);
   height: 100vh;
   position: fixed;
   top: -1px;

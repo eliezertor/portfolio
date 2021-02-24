@@ -37,6 +37,7 @@
     @media (orientation: landscape) {
       height: 100%;
       flex-direction: row;
+      padding-top: 30px;
     }
   }
   &__project {
@@ -67,6 +68,11 @@
     font-weight: 500;
     letter-spacing: 0.8px;
     line-height: 22px;
+    @media (orientation: landscape) {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
     @include tablet {
       font-size: 1.7em;
     }
@@ -93,7 +99,6 @@
   &__project-description {
     color: white;
     width: 77%;
-    font-size: 0.8rem;
     margin-top: 0;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.8px;
@@ -109,6 +114,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+
     @include tablet {
       width: 90%;
     }
@@ -121,6 +127,7 @@
     width: 100%;
     border-radius: 3px;
     margin-bottom: 10px;
+
     @include tablet {
       // width: 90%;
       // margin-top: 10%;
@@ -134,7 +141,7 @@
     &:hover {
       .projects__project-overlay {
         width: 100%;
-        height: 94%;
+        height: 95.5%;
         border-radius: 3px;
         align-self: center;
         background: rgba(0, 0, 0, 0.5);
@@ -230,13 +237,17 @@
     font-size: 0.8rem;
     font-weight: 300;
     list-style: none;
+    @media (orientation: landscape) {
+      font-size: 0.8em;
+    }
+
     @include tablet {
       display: flex;
       align-items: center;
       // justify-content: center;
     }
     @include desktop {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 }

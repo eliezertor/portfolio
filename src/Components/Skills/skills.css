@@ -43,6 +43,7 @@
 @media screen and (min-width: 1200px) {
   .skills {
     padding-bottom: 0px;
+    padding-top: 2%;
   }
 }
 .skills__container {

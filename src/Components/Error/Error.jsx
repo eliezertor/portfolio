@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Cry from '../../assets/icons/sad-tear-regular.svg';
 import Bike from '../../assets/Logo/bike.png';
 
 import './error.scss';

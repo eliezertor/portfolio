@@ -5,6 +5,7 @@ import Projects from '../Projects/Projects';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import Data from '../../data/data.json';
+import Down from '../../assets/icons/angle-down-solid.svg';
 
 let resume =
   'https://drive.google.com/uc?export=download&id=1EMfg5NFd-GNQVA1PpIvubErRC-uoe4AO';
@@ -20,15 +21,17 @@ const Home = () => {
             <h2 className="home__break home__break-header">
               I'm <span className="home__highlighter">Eliezer Toribio</span>.
             </h2>
-            <p className="home__break home__break-heading">(Eli for short. Eh-li. Not Ee-lai.)</p>
-            <p className="home__break">
-              I’m a career switcher, a Brainstation grad, and a passionate&nbsp;
-              <span className="home__highlighter">full-stack engineer.</span>
+            <p className="home__break home__break-heading">
+              (Eli for short. Eh-li. Not Ee-lai.)
             </p>
             <p className="home__break">
-              I’m looking for a position as part of a growing, innovative team
+              I’m a career switcher, a Brainstation grad, and a passionate&nbsp;
+              <span className="home__highlighter">full-stack engineer</span>.
+            </p>
+            <p className="home__break">
+              I’m looking for a position within a growing, innovative team
               that’s ready to add an extroverted developer,&nbsp;
-              <span className="home__highlighter">expert builder,</span>
+              <span className="home__highlighter">expert builder</span>,
               &nbsp;and overall friendly human to their team.
             </p>
 
@@ -49,6 +52,9 @@ const Home = () => {
               <Link className="home__btn-link" to="/Contact">
                 CONTACT
               </Link>
+            </div>
+            <div className="home__down-container">
+              <img src={Down} alt="Down arrow" className="home__down-arrow" />
             </div>
           </main>
         </div>
