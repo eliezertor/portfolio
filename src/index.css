@@ -2,9 +2,10 @@ body {
   /* height: auto; */
   margin: 0;
   padding: 0;
-  width: auto;
+  /* width: auto; */
   font-family: 'Roboto', sans-serif;
 }
+
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

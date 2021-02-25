@@ -2,21 +2,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  width: 100%;
 }
 @media (orientation: landscape) {
   .projects {
     height: 100vh;
   }
-}
-.projects__title {
-  color: #db7c26;
-  font-weight: 300;
-  font-size: 0.8rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-left: 35px;
-  margin: 0 auto;
 }
 .projects__container {
   padding-top: 70px;
@@ -38,6 +29,12 @@
 @media (orientation: landscape) {
   .projects__container {
     height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects__container {
+    width: 100%;
   }
 }
 @media (orientation: landscape) {
@@ -49,6 +46,15 @@
             flex-direction: row;
     padding-top: 30px;
   }
+}
+.projects__title {
+  color: #db7c26;
+  font-weight: 300;
+  font-size: 0.8rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 35px;
+  margin: 0 auto;
 }
 .projects__project {
   display: -webkit-box;

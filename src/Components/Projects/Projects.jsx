@@ -5,9 +5,8 @@ import { v4 as uuidv4 } from 'uuid';
 
 function Projects() {
   return (
-    <div title="projects" id="projects" className="Projects">
+    <div className="projects">
       <div className="projects__container">
-        {/* <h6 className="projects__title">PROJECTS</h6> */}
         {Data.projects.map((projects) => {
           return (
             <>

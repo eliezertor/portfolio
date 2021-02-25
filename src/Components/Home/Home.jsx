@@ -16,7 +16,6 @@ const Home = () => {
       <div className="home">
         <div className="home__container-paragraph">
           <main className="home__paragraph">
-            {/* <h2>Hola! </h2> */}
             <p className="home__break">&#60;et&#62;</p>
             <h2 className="home__break home__break-header">
               I'm <span className="home__highlighter">Eliezer Toribio</span>.
@@ -58,7 +57,6 @@ const Home = () => {
             </div>
           </main>
         </div>
-
         <Skills />
         <Projects />
         <div className="home__social--links ">

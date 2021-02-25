@@ -1,7 +1,5 @@
 .about {
   background-color: #243b55;
-  padding-top: 1px;
-  padding-bottom: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,6 +23,7 @@
   width: 80%;
   z-index: 1;
   padding: 10% 0;
+  height: 100vh;
 }
 @media screen and (min-width: 1200px) {
   .about__main {
@@ -32,6 +31,7 @@
     margin-left: auto;
     margin-bottom: 7%;
     padding-top: 5%;
+    height: unset;
   }
 }
 .about__heading {

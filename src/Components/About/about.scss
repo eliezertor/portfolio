@@ -4,8 +4,6 @@
 
 .about {
   background-color: #243b55;
-  padding-top: 1px;
-  padding-bottom: 1px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -25,11 +23,14 @@
     width: 80%;
     z-index: 1;
     padding: 10% 0;
+    height: 100vh;
+
     @include desktop {
       width: 60%;
       margin-left: auto;
       margin-bottom: 7%;
       padding-top: 5%;
+      height: unset;
     }
   }
   &__heading {

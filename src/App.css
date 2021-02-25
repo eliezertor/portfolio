@@ -1,7 +1,7 @@
 .App {
   margin: 0;
   padding: 0;
-  width: auto;
+  /* width: auto; */
   /* background: #141e30;  */
   /* fallback for old browsers */
   /* background: -webkit-linear-gradient(
@@ -14,4 +14,6 @@
     #243b55,
     #141e30
     );  */
+    
 }
+
