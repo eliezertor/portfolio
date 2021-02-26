@@ -1,22 +1,23 @@
-import React, { useState } from "react";
-import Www from "../../assets/Logo/Eliezer-Logo.png";
-import "./Navbar.scss";
-import Close from "../../assets/icons/window-close.svg";
-import Data from "../../data/data.json";
-import { Link } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
+import React, { useState } from 'react';
+import './Navbar.scss';
+import Close from '../../assets/icons/window-close.svg';
+import Data from '../../data/data.json';
+import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
+import ET from '../../assets/Logo/ETM.png';
+import Bike from '../../assets/Logo/bike.png';
 
 const Navbar = () => {
   let [ham, setHam] = useState(false);
-  let [navBarMenu, setNavBarMenu] = useState("navbar__menu--hide");
+  let [navBarMenu, setNavBarMenu] = useState('navbar__menu--hide');
 
   let hamburger = () => {
     if (ham === false) {
+      setNavBarMenu('navbar__menu');
       setHam(true);
-      setNavBarMenu("navbar__menu");
     } else if (ham === true) {
+      setNavBarMenu('navbar__menu--hide');
       setHam(false);
-      setNavBarMenu("navbar__menu--hide");
     }
   };
 
@@ -26,21 +27,23 @@ const Navbar = () => {
   let projects;
   let contact;
 
-  if (location === "/") {
-    home = "navbar__list-link--active";
-  } else if (location === "/Projects") {
-    projects = "navbar__list-link--active";
-  } else if (location === "/Contact") {
-    contact = "navbar__list-link--active";
+  if (location === '/') {
+    home = 'navbar__list-link--active';
+  } else if (location === '/About') {
+    projects = 'navbar__list-link--active';
+  } else if (location === '/Contact') {
+    contact = 'navbar__list-link--active';
   }
 
   return (
     <nav id="top" className="navbar">
       <div className="navbar__logo-container">
         <Link className="navbar__logo-link" to="/">
-          <img className="navbar__logo" src={Www} alt="ET logo" />
+          {/* <h1 className="navbar__logo">ET</h1> */}
+          <img className="navbar__logo" src={ET} alt="Logo" />
+          <img className="navbar__logo-bike" src={Bike} alt="Logo" />
         </Link>
-        <div onClick={hamburger} className="navbar__mobile">
+        <div onClick={() => hamburger()} className="navbar__mobile">
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-top "></div>
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-center"></div>
           <div className="navbar__mobile-hamburger navbar__mobile-hamburger-bottom "></div>
@@ -68,9 +71,9 @@ const Navbar = () => {
               <Link
                 onClick={() => hamburger()}
                 className={`navbar__list-link ${projects}`}
-                to="/Projects"
+                to="/About"
               >
-                My Work
+                About
               </Link>
             </li>
             <li className="navbar__list-item">
@@ -90,7 +93,7 @@ const Navbar = () => {
                     href={social.link}
                     className="navbar__menu-social-links "
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <img
                       onClick={() => hamburger()}

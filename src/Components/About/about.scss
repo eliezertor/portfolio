@@ -1,0 +1,111 @@
+@import '../../styles/Partials/fonts';
+@import '../../styles/Partials/mixins';
+@import '../../styles/Partials/variables';
+
+.about {
+  background-color: #243b55;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 22px;
+  font-size: 0.9rem;
+  position: relative;
+  @include desktop {
+    // height: 100vh;
+  }
+
+  &__main {
+    color: white;
+    margin: 0 auto;
+    width: 80%;
+    z-index: 1;
+    padding: 10% 0;
+    height: 100vh;
+
+    @include desktop {
+      width: 60%;
+      margin-left: auto;
+      margin-bottom: 7%;
+      padding-top: 5%;
+      height: unset;
+    }
+  }
+  &__heading {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.8px;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    @include desktop {
+      width: 55%;
+    }
+  }
+  &__text-heading {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    @include desktop {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__highlighter {
+    background-color: #db7e26b6;
+    &-active {
+      &:hover {
+        background-color: unset;
+      }
+    }
+  }
+  &__list-items {
+    color: white;
+    margin: 5% auto;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+    font-weight: 200;
+    @include desktop {
+      margin: 2% 0;
+      font-size: 1.1rem;
+    }
+  }
+
+  &__hire {
+    font-size: 1.2rem;
+    font-weight: 400;
+    &-link {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: #db7c26;
+      }
+    }
+  }
+
+  .custom-shape-divider-bottom-1614098670 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1614098670 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 228px;
+  }
+
+  .custom-shape-divider-bottom-1614098670 .shape-fill {
+    fill: #141e30;
+  }
+}

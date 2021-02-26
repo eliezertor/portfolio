@@ -1,4 +1,26 @@
+.custom-shape-divider-top-1614044863 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1614044863 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1614044863 .shape-fill {
+  fill: #243b55;
+}
+
 .skills {
+  position: relative;
+  background-color: #141e30;
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -10,20 +32,22 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 15%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 @media screen and (min-width: 768px) {
   .skills {
-    padding-top: 5%;
+    padding: 5% 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .skills {
     padding-bottom: 0px;
+    padding-top: 2%;
   }
 }
 .skills__container {
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,10 +67,10 @@
   /* FF 35+ */
 }
 .skills__bem:hover, .skills__material:hover, .skills__passport:hover, .skills__git:hover, .skills__express:hover, .skills__node:hover, .skills__gsap:hover, .skills__scss:hover, .skills__react:hover, .skills__js:hover {
-  -webkit-transition: -webkit-filter 0.5s ease-in-out;
-  transition: -webkit-filter 0.5s ease-in-out;
-  transition: filter 0.5s ease-in-out;
-  transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
+  -webkit-transition: -webkit-filter 0.1s ease-in-out;
+  transition: -webkit-filter 0.1s ease-in-out;
+  transition: filter 0.1s ease-in-out;
+  transition: filter 0.1s ease-in-out, -webkit-filter 0.1s ease-in-out;
   -webkit-filter: grayscale(0%);
   /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(0%);

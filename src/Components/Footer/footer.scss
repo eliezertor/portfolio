@@ -1,11 +1,16 @@
-@import "../../styles/Partials/fonts";
-@import "../../styles/Partials/mixins";
-@import "../../styles/Partials/variables";
+@import '../../styles/Partials/fonts';
+@import '../../styles/Partials/mixins';
+@import '../../styles/Partials/variables';
 
 .footer {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  background-color: #141e30;
+  z-index: 1;
+  @include desktopPlus {
+    // height: 150px;
+  }
 
   &__logo-btn {
     border: none;
@@ -22,10 +27,16 @@
     }
     @include desktop {
       justify-content: center;
+      margin-top: 2%;
     }
   }
   &__logo {
     width: 20px;
+    z-index: 1;
+    &:hover {
+      filter: invert(55%) sepia(45%) saturate(846%) hue-rotate(346deg)
+        brightness(91%) contrast(87%);
+    }
   }
   &__date {
     color: white;
@@ -35,6 +46,9 @@
     margin: 0 0 10px 0;
     @include tablet {
       font-size: 0.8rem;
+    }
+    @include desktop {
+      margin-top: 0.5%;
     }
   }
   &__policy {

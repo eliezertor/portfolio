@@ -73,18 +73,18 @@
   ],
   "projects": [
     {
-      "image": "./assets/images/SafelyPaid.png",
+      "image": "./assets/images/safelypaidgif2.gif",
       "name": "SafelyPaid",
-      "description": "SafelyPaid is a safe platform and web app that helps users secure their online transactions on C2C marketplaces like Kijiji and Craigslist.",
+      "description": "SafelyPaid helps modern savvy shoppers secure their online transactions on C2C marketplaces like Kijiji and Craigslist.",
       "descriptionList": [
         {
-          "item": "Built a mobile-friendly frontend with HTML5, CSS3, BEM, Sass, JavaScript, React, and Material-UI that contained multiple components and pages."
+          "item": "Mobile-friendly frontend with HTML5, CSS3, BEM, Sass, JavaScript, React, and Material-UI."
         },
         {
-          "item": "Implemented a backend with Node.js, Espress.js, axios and Passport that handled requests from the frontend for authorization and for features."
+          "item": "Node.js, Express.js, MongoDB and Passport backend."
         },
         {
-          "item": "Incorporated multiple third-party APIs like Shippo and Stripe by following their developer guidelines and using their sandbox environments."
+          "item": "Third-party APIs like Shippo and Stripe."
         }
       ],
       "link": "https://github.com/eliezertor/safelypaid",
@@ -93,9 +93,9 @@
       "webSite": "https://safelypaid.herokuapp.com/"
     },
     {
-      "image": "./assets/images/fsp.png",
+      "image": "./assets/images/fsp.gif",
       "name": "For Sensitive People",
-      "description": "My wife is A Sensitive Person who gets deeply impacted by intense scenes in movies and shows and then can’t forget about them for months (or years). For Sensitive People is my way of helping her, and other folks like her, determine whether movies, tv shows, and documentaries are safe to watch for certain triggers, including scenes of abuse, abandonment, animal cruelty, and other trauma.",
+      "description": "FSP helps people determine if video content is safe to watch for specific triggers, like scenes of abuse or animal cruelty.",
 
       "descriptionList": [
         {
@@ -112,6 +112,20 @@
       "logo": "./icons/github-brands.svg",
       "linkImg": "./assets/icons/link-solid.svg",
       "webSite": "https://www.forsensativepeople.com/"
+    },
+    {
+      "image": "./assets/images/adidasgif2.gif",
+      "name": "Adidas",
+      "description": "A collaborative project with adidas to ideate the future of sports eCommerce and increase environmental sustainability.",
+
+      "descriptionList": [
+        {
+          "item": "HTML5, CSS3, BEM, Sass, JavaScript and React."
+        }
+      ],
+      "link": "https://github.com/eliezertor/adidas",
+      "logo": "./icons/github-brands.svg",
+      "linkImg": "./assets/icons/link-solid.svg"
     }
   ]
 }

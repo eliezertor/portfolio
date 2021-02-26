@@ -1,0 +1,112 @@
+.about {
+  background-color: #243b55;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 22px;
+  font-size: 0.9rem;
+  position: relative;
+}
+.about__main {
+  color: white;
+  margin: 0 auto;
+  width: 80%;
+  z-index: 1;
+  padding: 10% 0;
+  height: 100vh;
+}
+@media screen and (min-width: 1200px) {
+  .about__main {
+    width: 60%;
+    margin-left: auto;
+    margin-bottom: 7%;
+    padding-top: 5%;
+    height: unset;
+  }
+}
+.about__heading {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .about__heading {
+    width: 55%;
+  }
+}
+.about__text-heading {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 22px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 1200px) {
+  .about__text-heading {
+    font-size: 1.3rem;
+  }
+}
+.about__highlighter {
+  background-color: #db7e26b6;
+}
+.about__highlighter-active:hover {
+  background-color: unset;
+}
+.about__list-items {
+  color: white;
+  margin: 5% auto;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 22px;
+  font-weight: 200;
+}
+@media screen and (min-width: 1200px) {
+  .about__list-items {
+    margin: 2% 0;
+    font-size: 1.1rem;
+  }
+}
+.about__hire {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.about__hire-link {
+  text-decoration: none;
+  color: white;
+}
+.about__hire-link:hover {
+  color: #db7c26;
+}
+.about .custom-shape-divider-bottom-1614098670 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.about .custom-shape-divider-bottom-1614098670 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 228px;
+}
+.about .custom-shape-divider-bottom-1614098670 .shape-fill {
+  fill: #141e30;
+}
+/*# sourceMappingURL=about.css.map */

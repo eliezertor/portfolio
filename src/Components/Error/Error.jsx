@@ -1,13 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Cry from "../../assets/icons/sad-tear-regular.svg";
-import "./error.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Bike from '../../assets/Logo/bike.png';
+
+import './error.scss';
 
 function Error() {
   return (
     <div className="error">
       <div className="error__container">
-        <img className="error__img" src={Cry} alt="Sad Icon" />
+        <img className="error__img" src={Bike} alt="Sad Icon" />
         <p className="error__code">
           Sorry, this page doesn't exist. Please check the URL or go back a
           page.

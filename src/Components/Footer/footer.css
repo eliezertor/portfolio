@@ -9,6 +9,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #141e30;
+  z-index: 1;
 }
 .footer__logo-btn {
   border: none;
@@ -34,10 +36,16 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 2%;
   }
 }
 .footer__logo {
   width: 20px;
+  z-index: 1;
+}
+.footer__logo:hover {
+  -webkit-filter: invert(55%) sepia(45%) saturate(846%) hue-rotate(346deg) brightness(91%) contrast(87%);
+          filter: invert(55%) sepia(45%) saturate(846%) hue-rotate(346deg) brightness(91%) contrast(87%);
 }
 .footer__date {
   color: white;
@@ -51,6 +59,11 @@
 @media screen and (min-width: 768px) {
   .footer__date {
     font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__date {
+    margin-top: 0.5%;
   }
 }
 .footer__policy {

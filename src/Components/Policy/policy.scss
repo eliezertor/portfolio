@@ -1,11 +1,18 @@
-@import "../../styles/Partials/fonts";
-@import "../../styles/Partials/mixins";
-@import "../../styles/Partials/variables";
+@import '../../styles/Partials/fonts';
+@import '../../styles/Partials/mixins';
+@import '../../styles/Partials/variables';
 
 .policy {
   display: flex;
   flex-direction: column;
-  margin: 0 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #243b55;
+
+  &__container {
+    width: 90%;
+  }
+
   & h2 {
     color: white;
   }
