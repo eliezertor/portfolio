@@ -54,7 +54,7 @@ function About() {
             </span>
           </h6>
         </main>
-        <div class="custom-shape-divider-bottom-1614098670">
+        <div className="custom-shape-divider-bottom-1614098670">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ function About() {
           >
             <path
               d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-              class="shape-fill"
+              className="shape-fill"
             ></path>
           </svg>
         </div>

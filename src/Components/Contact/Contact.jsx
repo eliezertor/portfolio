@@ -7,15 +7,16 @@ import Plane from '../../assets/icons/paper-plane-solid.svg';
 import './contact.scss';
 
 export default function ContactUs() {
-  let serviceId = 'service_wk5nili';
-  let templateId = 'template_ume76um';
-  let userId = 'user_fgqf1auVWi89eBgAagyXe';
-  let key = '6LcNHl8aAAAAAHGZukEemWMX0xlcmM1R9guxd3T1';
+ let serviceId = process.env.REACT_APP_SERVICE_ID;
+  let templateId = process.env.REACT_APP_TEMPLATE_ID;
+  let userId = process.env.REACT_APP_USER_ID;
+  let keys = process.env.REACT_APP_SITE_KEY;
   let [name, setName] = useState('');
   let [email, setEmail] = useState('');
   let [message, setMessage] = useState('');
   let [successOrNot, setSuccessOrNot] = useState('');
   let [errorOrNot, setErrorOrNot] = useState('');
+
 
   function onChange(value) {
     console.log('Captcha value:', value);
@@ -91,7 +92,6 @@ export default function ContactUs() {
         <p className="contact__why-me">I can’t wait to chat. </p>
       </div>
       <form className="contact__form" onSubmit={sendEmail}>
-        {/* TODO: error or succsess message */}
         <div className="contact__form-message-container">
           <p className={successOrNot}>{errorOrNot}</p>
         </div>
@@ -126,7 +126,7 @@ export default function ContactUs() {
         <div className="contact__send">
           <ReCAPTCHA
             size="normal"
-            sitekey={key}
+            sitekey={keys}
             onChange={onChange}
             theme="dark"
           />
@@ -159,7 +159,7 @@ export default function ContactUs() {
           );
         })}
       </div>
-      <div class="custom-shape-divider-bottom-1614098670">
+      <div className="custom-shape-divider-bottom-1614098670">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +168,7 @@ export default function ContactUs() {
         >
           <path
             d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-            class="shape-fill"
+            className="shape-fill"
           ></path>
         </svg>
       </div>

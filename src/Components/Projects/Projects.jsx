@@ -6,12 +6,11 @@ import { v4 as uuidv4 } from 'uuid';
 function Projects() {
   return (
     <div className="projects">
-      <div className="projects__container">
+      <div  className="projects__container">
         {Data.projects.map((projects) => {
           return (
-            <>
               <div key={uuidv4()} className="projects__project">
-                <>
+                
                   <h2 className="projects__project-title">{projects.name}</h2>
                   <div className="projects__project-link-img">
                     <div className="projects__project-img-container">
@@ -25,14 +24,14 @@ function Projects() {
                           <ul className="projects__project-text-list">
                             {projects.descriptionList.map((list) => {
                               return (
-                                <>
+                              
                                   <li
-                                    key={uuidv4()}
+                                  key={uuidv4()}
                                     className="projects__project-text"
                                   >
                                     {list.item}
                                   </li>
-                                </>
+                                
                               );
                             })}
                           </ul>
@@ -69,9 +68,8 @@ function Projects() {
                   <p className="projects__project-description">
                     {projects.description}
                   </p>
-                </>
               </div>
-            </>
+         
           );
         })}
       </div>
