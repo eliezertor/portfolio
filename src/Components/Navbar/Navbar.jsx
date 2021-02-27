@@ -39,7 +39,6 @@ const Navbar = () => {
     <nav id="top" className="navbar">
       <div className="navbar__logo-container">
         <Link className="navbar__logo-link" to="/">
-          {/* <h1 className="navbar__logo">ET</h1> */}
           <img className="navbar__logo" src={ET} alt="Logo" />
           <img className="navbar__logo-bike" src={Bike} alt="Logo" />
         </Link>

@@ -16,7 +16,6 @@
     flex-flow: wrap;
     align-items: center;
     justify-content: center;
-    
   }
   @include desktop {
     flex-direction: row;
@@ -107,6 +106,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin-top: 10%;
     @media (orientation: landscape) {
       height: 100%;
     }
@@ -127,6 +128,9 @@
   }
 
   &__form-message-container {
+    position: absolute;
+    top: -14%;
+    left: 15%;
     width: 70%;
     display: flex;
     align-items: center;

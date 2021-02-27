@@ -26,12 +26,26 @@
     filter: invert(100%);
   }
   &__btn {
-    background-color: red;
+    background-color: #db7c26;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
     border: none;
-    border-radius: 2px;
-    border: none;
-    height: 40px;
-    width: 170px;
+    border-radius: 3px;
+    width: 200px;
+    height: 45px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    &:hover {
+      box-shadow: -3px 3px gray;
+      transform: translate(3px);
+    }
   }
 
   &__link {
