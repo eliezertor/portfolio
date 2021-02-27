@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from 'react-google-recaptcha';
 import Data from '../../data/data.json';
@@ -7,68 +7,83 @@ import Plane from '../../assets/icons/paper-plane-solid.svg';
 import './contact.scss';
 
 export default function ContactUs() {
- let serviceId = process.env.REACT_APP_SERVICE_ID;
+  let serviceId = process.env.REACT_APP_SERVICE_ID;
   let templateId = process.env.REACT_APP_TEMPLATE_ID;
   let userId = process.env.REACT_APP_USER_ID;
   let keys = process.env.REACT_APP_SITE_KEY;
-  let [name, setName] = useState('');
-  let [email, setEmail] = useState('');
-  let [message, setMessage] = useState('');
-  let [successOrNot, setSuccessOrNot] = useState('');
-  let [errorOrNot, setErrorOrNot] = useState('');
+  let nameValue = document.getElementById('from_name');
+  let messageValue = document.getElementById('message');
+  let emailValue = document.getElementById('from_email');
+  let [mail, setMail] = useState({
+    name: '',
+    email: '',
+    message: '',
+    successOrNot: '',
+    errorOrNot: '',
+  });
 
+  console.log(mail);
 
   function onChange(value) {
     console.log('Captcha value:', value);
   }
 
-  let nameValue = document.getElementById('from_name');
-  let messageValue = document.getElementById('message');
-  let emailValue = document.getElementById('from_email');
+  useEffect(() => {
+    if (mail.name !== '') {
+      nameValue.style.backgroundImage = 'none';
+    }
 
-  if (name !== '') {
-    nameValue.style.backgroundImage = 'none';
-  }
+    if (mail.email !== '') {
+      emailValue.style.backgroundImage = 'none';
+    }
 
-  if (email !== '') {
-    emailValue.style.backgroundImage = 'none';
-  }
-
-  if (message !== '') {
-    messageValue.style.backgroundImage = 'none';
-  }
+    if (mail.message !== '') {
+      messageValue.style.backgroundImage = 'none';
+    }
+  }, [mail.name, mail.email, mail.message]);
 
   function sendEmail(e) {
     e.preventDefault();
 
-    if (name === '') {
-      setErrorOrNot("Don't forget your name, I need to know who you are.");
-      setSuccessOrNot('contact__form-message--error');
-    } else if (email === '') {
-      setErrorOrNot('No call display here, where do I email you? ');
-      setSuccessOrNot('contact__form-message--error');
-    } else if (message === '') {
-      setErrorOrNot('What are we chatting about?');
-      setSuccessOrNot('contact__form-message--error');
+    if (mail.name === '') {
+      setMail({
+        ...mail,
+        errorOrNot: "Don't forget your name, I need to know who you are.",
+        successOrNot: 'contact__form-message--error',
+      });
+    } else if (mail.email === '') {
+      setMail({
+        ...mail,
+        errorOrNot: 'No call display here, where do I email you?',
+        successOrNot: 'contact__form-message--error',
+      });
+    } else if (mail.message === '') {
+      setMail({
+        ...mail,
+        errorOrNot: 'What are we chatting about?',
+        successOrNot: 'contact__form-message--error',
+      });
     } else {
-      emailjs
-        .sendForm(serviceId, templateId, e.target, userId)
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-            if (error.text) {
-              setErrorOrNot(error.text);
-              setSuccessOrNot('contact__form-message--error');
-            }
+      emailjs.sendForm(serviceId, templateId, e.target, userId).then(
+        (result) => {
+          console.log(result.text);
+          setMail({
+            ...mail,
+            errorOrNot: "Can't wait to chat",
+            successOrNot: 'contact__form-message--success',
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          if (error.text) {
+            setMail({
+              ...mail,
+              errorOrNot: `Are you a robot?`,
+              successOrNot: 'contact__form-message--error',
+            });
           }
-        )
-        .then(
-          setSuccessOrNot('contact__form-message--success'),
-          setErrorOrNot("Can't wait to chat")
-        );
+        }
+      );
     }
   }
 
@@ -93,7 +108,7 @@ export default function ContactUs() {
       </div>
       <form className="contact__form" onSubmit={sendEmail}>
         <div className="contact__form-message-container">
-          <p className={successOrNot}>{errorOrNot}</p>
+          <p className={mail.successOrNot}>{mail.errorOrNot}</p>
         </div>
         <input type="hidden" name="contact_number" />
         <input type="hidden" value="Eliezer" name="to_name" />
@@ -104,7 +119,7 @@ export default function ContactUs() {
           type="text"
           name="from_name"
           id="from_name"
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => setMail({ ...mail, name: e.target.value })}
         />
 
         <input
@@ -113,7 +128,7 @@ export default function ContactUs() {
           type="email"
           name="from_email"
           id="from_email"
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setMail({ ...mail, email: e.target.value })}
         />
 
         <textarea
@@ -121,7 +136,7 @@ export default function ContactUs() {
           className="contact__message-input contact__message-input--red"
           name="message"
           id="message"
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={(e) => setMail({ ...mail, message: e.target.value })}
         />
         <div className="contact__send">
           <ReCAPTCHA
