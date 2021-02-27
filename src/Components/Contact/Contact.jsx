@@ -22,8 +22,6 @@ export default function ContactUs() {
     errorOrNot: '',
   });
 
-  console.log(mail);
-
   function onChange(value) {
     console.log('Captcha value:', value);
   }
